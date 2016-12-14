@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  institution_code: MyString
+  processing_month: MyString
+  processing_year: 1
+  Jan_Stats: 1
+  Feb_Stats: 1
+  Mar_Stats: 1
+  Apr_Stats: 1
+  May_Stats: 1
+  Jun_Stats: 1
+  Jul_Stats: 1
+  Aug_Stats: 1
+  Sept_Stats: 1
+  Oct_Stats: 1
+  Nov_Stats: 1
+  Dec_Stats: 1
+
+two:
+  institution_code: MyString
+  processing_month: MyString
+  processing_year: 1
+  Jan_Stats: 1
+  Feb_Stats: 1
+  Mar_Stats: 1
+  Apr_Stats: 1
+  May_Stats: 1
+  Jun_Stats: 1
+  Jul_Stats: 1
+  Aug_Stats: 1
+  Sept_Stats: 1
+  Oct_Stats: 1
+  Nov_Stats: 1
+  Dec_Stats: 1

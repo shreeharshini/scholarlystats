@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Platform Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Report</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @platform_reports.each do |platform_report| %>
+      <tr>
+        <td><%= platform_report.platform_id %></td>
+        <td><%= platform_report.report_id %></td>
+        <td><%= link_to 'Show', platform_report %></td>
+        <td><%= link_to 'Edit', edit_platform_report_path(platform_report) %></td>
+        <td><%= link_to 'Destroy', platform_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Platform Report', new_platform_report_path %>

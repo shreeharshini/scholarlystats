@@ -1,0 +1,112 @@
+// Place all the styles related to the import_data controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+<style type="text/css">
+	    .login-logo img {
+		 width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+		}
+    
+	.login-head {
+	background-color: #fff;
+	
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+	
+	.login-bg{
+	/*background-attachment: fixed;
+	background: url(/images/libraries/home/login/login-bg.jpg);
+	background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #fff;*/
+	
+
+    padding-top: 44px;
+    padding-bottom: 100px;
+}
+
+
+	.login-bg2{
+	background-attachment: fixed;
+	background: url(/images/libraries/home/login/login-bg.jpg);
+	background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+	
+	
+}
+
+.login-heading-about {
+    font-size: 22px;
+    font-weight: 600;
+    color: #666666;
+	    margin-top: 58px;
+}
+.login-p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.login-box{
+	margin: 0 3px;
+    background: rgba(255, 255, 255, 0.77);
+    text-align: center;
+    border: solid 1px #ccc;
+	padding:40px;
+ 
+	}
+
+.login-box-text {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-footer-bg {
+	background-color: #fff;
+	 position: fixed;
+    bottom: 0px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	    z-index: 5;
+	
+	}
+	.padding-top-20{
+		padding-top:20px;
+		}
+		
+		
+		@media (max-width:780px) { 
+		
+			.login-bg{
+	
+	
+
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+		
+		}
+.fancybox-inner{height:300px !important}
+    </style>
+     <style>
+body{
+padding-top:70px\0;	
+padding-bottom:70px\0;	
+}
+
+.pageLoadContainer{margin:0 auto;position:absolute;top:0;background:#000; opacity:0.5;width:99%; height:100%;z-index:2;}

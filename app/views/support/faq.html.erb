@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQs</title>
+  <%= render :partial => '/layouts/side_bar_navigation'%>
+
+    <%= render :partial => '/layouts/header'%>
+</head>
+<body>
+
+ <br>
+ <br>
+
+<div class="navbar navbar-sidebar-nav" id="accordion">
+
+<div class="container">
+
+    <div class="faq">
+                 
+                <div class="heading">
+                  <h6>COUNTER </h6>
+                </div>
+                <h6>
+                  <a data-toggle="collapse" href="#collapse1">WHAT IS COUNTER AND WHAT DOES IT STAND FOR?</a>
+                </h6>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>
+                  	COUNTER (Counting Online Usage of NeTworked Electronic Resources) is an initiative formed by libraries and publishers to insure consistent usage in reporting. COUNTER also requires specific reports and definition of usage terms for COUNTER compliance. The COUNTER Codes of Practice provides a set of standards and protocols governing the recording and exchange of online usage data. To learn more about COUNTER, visit www.projectcounter.org.
+                  </p></li>
+                </ul>
+             </div>
+      
+  </div>
+</div>
+<div class="navbar navbar-sidebar-nav" id="accordion">
+  <div class="container">
+    <div class="faq">
+         
+              <div class="heading">
+                <h6>Log in, Access & Browser Requirements </h6> 
+                </div>
+                <h6>
+                  <a data-toggle="collapse" href="#collapse2">WHAT EFFECT DOES USING MOZILLA FIREFOX INSTEAD OF INTERNET EXPLORER HAVE ON SITE</a>
+                </h6>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>None. Users going through a proxy server will still have an IP address associated with the institution.</p></li>
+                </ul>
+             </div>
+            </div>
+  
+  </div>
+</div>
+
+<div class="navbar navbar-sidebar-nav" id="accordion">
+  <div class="container">
+    <div class="faq">
+       <div class="heading">
+              <h6>
+                Reports
+              </h6>
+        </div>
+                <h6>
+                  <a data-toggle="collapse" href="#collapse3">WHAT ARE CONSOLIDATE COUNTER REPORTS?</a>
+                </h6>
+              <div id="collapse3" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><P>Counter Reports are the consolidated reports provided to the libraries which are downloaded from over 145 publishers' websites we support, which are COUNTER 4 compliant. These are base reports in consolidated form for Books, Journals, and databases usage.</P></li>
+                </ul>
+             </div>
+
+             <h6 >
+                    <a data-toggle="collapse" href="#collapse4">WHAT ARE CUSTOM REPORTS?</a>
+             </h6>
+              <div id="collapse4" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item"><p>A host of custom COUNTER-compliant reports makes it easier to analyze usage of online resources. These custom reports help libraries to understand and analyze usage trends and effectiveness of subscribed resources. These reports provide an insight into the actual usage of online resources, and helps libraries in making budgeting decision more effectively for optimization of content subscription.</p></li>
+                  </ul>
+             </div>
+
+                <h6>
+                  <a data-toggle="collapse" href="#collapse5">WHAT ARE SOURCE REPORTS?</a>
+                </h6>
+              <div id="collapse5" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>Source Reports are COUNTER reports that are provided by publishers to the subscribed library. These are unprocessed reports containing all the usage data that we collect individually for all libraries either manually or automated through SUSHI, wherever applicable.
+                </p></li>
+                </ul>
+             </div>
+     </div>   
+  </div>
+</div>
+
+
+
+<div class="navbar navbar-sidebar-nav" id="accordion">
+  <div class="container">
+    <div class="faq">       
+             <div class="heading">
+               <h6>
+                 Platform Access Details
+               </h6>
+             </div>
+                <h6>
+                  <a data-toggle="collapse" href="#collapse6">WHAT ARE PADS(PLATFORM ACCESS DETAILS)?</a>
+                </h6>
+              <div id="collapse6" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>Username and Password provided by Institution/Library in order to collect the Usage Statistics from the Collection Platforms.
+								</p></li>
+                </ul>
+             </div>
+
+              <h6 >
+                  <a data-toggle="collapse" href="#collapse8">WHAT ARE 'PADS INCORRECT/FAILED'?</a>
+                </h6>
+              <div id="collapse8" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>Username and Password combination is not accepted at the Collection Platform website URL at the time of collection. The access details are invalid and MPS Insight Team will not be able to collect your usage reports. Please contact the Account Manager at the respective Platform to obtain the correct set of access details.
+                </p></li>
+                </ul>
+             </div>
+
+             <h6 >
+                  <a data-toggle="collapse" href="#collapse9">WHAT IS MEANT BY PADS NOT RECEIVED?</a>
+                </h6>
+              <div id="collapse9" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>Missing username and password at www.mpsinsight.com/libraries under administrative Features/Access Details which leads to failure in collection of usage reports. MPS Insight expects PADs to be updated by the 1st of every month so that we can collect the usage reports as soon as possible.
+                </p></li>
+                </ul>
+             </div>
+
+              <h6 >
+                  <a data-toggle="collapse" href="#collapse10">WHAT IS MEANT BY 'REPORTS ARE NOT AVAILABLE'?</a>
+                </h6>
+              <div id="collapse10" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>Username and password are working fine as MPS Insight Team is able to login at the Collection Platform, but the selected usage reports are not available on the website at the time of collection. There may be a delay in publishing current month's reports by the platform or some changes in your account causing the publisher to not process your reports.MPS team will continue to check availability of reports until the 25th of the delivery month. We suggest you to contact the publisher directly in case you have not been informed about the non-availability of reports from a given platform.
+                </p></li>
+                </ul>
+             </div>
+     </div>
+  </div>
+</div>
+<%= render :partial => '/layouts/footer'%>
+
+</body>
+</html>

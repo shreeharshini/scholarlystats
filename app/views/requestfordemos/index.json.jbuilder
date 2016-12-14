@@ -1,0 +1,1 @@
+json.array! @requestfordemos, partial: 'requestfordemos/requestfordemo', as: :requestfordemo

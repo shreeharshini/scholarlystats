@@ -1,0 +1,1 @@
+(function(){$(function(){return $(document).on("change","#platforms_select",function(){return $.ajax("fyears",{type:"GET",dataType:"script",data:{platform_id:$("#platforms_select option:selected").val()},error:function(t,e){return console.log("AJAX Error: "+e)},success:function(){return console.log("Dynamic country select OK!")}})})})}).call(this);

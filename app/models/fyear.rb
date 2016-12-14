@@ -1,0 +1,2 @@
+class Fyear < ApplicationRecord
+end

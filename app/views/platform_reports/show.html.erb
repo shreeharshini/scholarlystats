@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @platform_report.platform_id %>
+</p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @platform_report.report_id %>
+</p>
+
+<%= link_to 'Edit', edit_platform_report_path(@platform_report) %> |
+<%= link_to 'Back', platform_reports_path %>

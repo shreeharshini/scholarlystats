@@ -1,0 +1,2 @@
+class YearUsage < ApplicationRecord
+end

@@ -1,0 +1,19 @@
+ table td {
+    padding: 13px 12px;
+    text-align: left;
+	
+    font-size: .95em;
+}
+
+table th {
+    background: #01579B;
+    color: #ffffff;
+    font-size: 14px;
+	padding: 10px 12px;
+    text-align: left;
+}
+
+.table > thead > tr > th {
+   
+	padding: 16px 12px;
+}

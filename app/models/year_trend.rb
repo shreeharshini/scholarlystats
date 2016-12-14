@@ -1,0 +1,2 @@
+class YearTrend < ApplicationRecord
+end

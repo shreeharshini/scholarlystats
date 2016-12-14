@@ -1,0 +1,94 @@
+Journal Report 1(R4),Number of Successful Full-text Article Requests by Month and Journal,,,,,,,,,,,,,,,,,,,,
+UC Riverside - 2508539,,,,,,,,,,,,,,,,,,,,,
+2508539,,,,,,,,,,,,,,,,,,,,,
+Period covered by Report,,,,,,,,,,,,,,,,,,,,,
+2014-01-01 to 2014-12-31,,,,,,,,,,,,,,,,,,,,,
+Date run,,,,,,,,,,,,,,,,,,,,,
+1/19/2015,,,,,,,,,,,,,,,,,,,,,
+Journal,Publisher,Platform,Journal DOI,Proprietary Identifier,Print ISSN,Online ISSN,Reporting Period Total,Reporting Period HTML,Reporting Period PDF,Jan-2014, Feb-2014, Mar-2014, Apr-2014, May-2014, Jun-2014, Jul-2014, Aug-2014, Sep-2014, Oct-2014, Nov-2014, Dec-2014
+ Total for all Journals,,,,,,,4746,197,1460,480,410,359,388,380,550,315,309,438,447,325,345
+ACM Proceedings,ACM,ACM Digital Library,,,n/a,2168-4081,3088,0,0,308,282,240,193,249,377,211,202,312,297,216,201
+ACM Transactions on Graphics (TOG),ACM,ACM Digital Library,,,0730-0301,1557-7368,76,0,76,31,7,2,2,2,0,2,4,9,7,3,7
+ACM SIGARCH Computer Architecture News,ACM,ACM Digital Library,,,0163-5964,n/a,43,0,43,21,6,1,1,0,2,1,2,2,1,1,5
+Journal of the ACM (JACM),ACM,ACM Digital Library,,,0004-5411,1557-735X,49,0,49,12,8,6,3,3,0,1,3,3,3,3,4
+Communications of the ACM,ACM,ACM Digital Library,,,0001-0782,1557-7317,305,113,192,22,19,26,28,24,17,13,12,20,43,20,61
+Proceedings of the VLDB Endowment,ACM,ACM Digital Library,,,2150-8097,n/a,93,0,93,12,15,18,6,3,6,5,8,9,4,3,4
+ACM Transactions on Embedded Computing Systems (TECS),ACM,ACM Digital Library,,,1539-9087,1558-3465,58,0,58,6,4,5,7,0,3,4,7,13,6,2,1
+ACM Transactions on Sensor Networks (TOSN),ACM,ACM Digital Library,,,1550-4859,1550-4867,31,0,31,6,5,0,4,3,0,0,1,5,2,2,3
+Queue,ACM,ACM Digital Library,,,1542-7730,1542-7749,63,49,14,7,6,0,11,9,11,6,2,3,4,0,4
+ACM SIGGRAPH Computer Graphics,ACM,ACM Digital Library,,,0097-8930,n/a,9,0,9,3,0,1,0,0,1,0,0,1,0,2,1
+ACM Transactions on Architecture and Code Optimization (TACO),ACM,ACM Digital Library,,,1544-3566,1544-3973,76,0,76,5,2,0,60,3,2,0,3,0,0,0,1
+ACM SIGMETRICS Performance Evaluation Review,ACM,ACM Digital Library,,,0163-5999,n/a,19,0,19,3,1,1,4,2,1,0,3,0,0,0,4
+ACM SIGPLAN Notices,ACM,ACM Digital Library,,,0362-1340,1558-1160,91,0,91,3,3,13,9,9,10,13,6,8,1,10,6
+Journal of Nanomaterials,ACM,ACM Digital Library,,,1687-4110,1687-4129,22,0,22,3,3,6,1,1,3,0,1,1,3,0,0
+ACM Transactions on Design Automation of Electronic Systems (TODAES),ACM,ACM Digital Library,,,1084-4309,1557-7309,19,0,19,3,1,1,1,1,1,2,0,1,2,2,4
+The Journal of Machine Learning Research,ACM,ACM Digital Library,,,1532-4435,1533-7928,20,0,20,3,0,1,1,2,1,1,1,1,4,3,2
+ACM SIGKDD Explorations Newsletter,ACM,ACM Digital Library,,,1931-0145,1931-0153,6,0,6,2,0,0,0,0,1,1,0,1,1,0,0
+ACM Transactions on Mathematical Software (TOMS),ACM,ACM Digital Library,,,0098-3500,1557-7295,25,0,25,2,5,3,3,0,1,3,1,1,4,0,2
+ACM SIGOPS Operating Systems Review,ACM,ACM Digital Library,,,0163-5980,n/a,31,0,31,5,2,0,4,1,5,1,0,2,8,1,2
+ACM Transactions on Modeling and Computer Simulation (TOMACS),ACM,ACM Digital Library,,,1049-3301,1558-1195,4,0,4,2,0,0,0,0,0,1,0,1,0,0,0
+ACM SIGCSE Bulletin,ACM,ACM Digital Library,,,0097-8418,n/a,20,0,20,1,3,0,1,0,5,2,0,1,2,2,3
+ACM Transactions on Software Engineering and Methodology (TOSEM),ACM,ACM Digital Library,,,n/a,1557-7392,6,0,6,2,2,0,0,0,0,0,0,2,0,0,0
+ACM Transactions on Database Systems (TODS),ACM,ACM Digital Library,,,0362-5915,1557-4644,38,0,38,1,1,3,1,3,7,1,6,3,6,2,4
+ACM SIGMOBILE Mobile Computing and Communications Review,ACM,ACM Digital Library,,,1559-1662,1931-1222,7,0,7,1,0,1,0,3,0,1,0,0,1,0,0
+ACM Transactions on Knowledge Discovery from Data (TKDD),ACM,ACM Digital Library,,,1556-4681,1556-472X,9,0,9,1,0,0,0,0,2,1,0,3,1,1,0
+ACM Transactions on Storage (TOS),ACM,ACM Digital Library,,,1553-3077,1553-3093,3,0,3,1,0,1,0,0,0,1,0,0,0,0,0
+ACM SIGMOD Record,ACM,ACM Digital Library,,,0163-5808,n/a,56,0,56,1,5,1,9,4,5,4,11,1,3,5,7
+EURASIP Journal on Wireless Communications and Networking,ACM,ACM Digital Library,,,1687-1472,1687-1499,2,0,2,1,0,0,0,0,0,0,0,0,1,0,0
+eLearn,ACM,ACM Digital Library,,,n/a,1535-394X,14,14,0,1,2,0,0,2,1,0,1,2,5,0,0
+IEEE/ACM Transactions on Networking (TON),ACM,ACM Digital Library,,,1063-6692,n/a,66,0,66,1,1,1,3,3,52,1,1,1,1,0,1
+ACM SIGACT News,ACM,ACM Digital Library,,,0163-5700,n/a,12,0,12,1,1,0,1,0,0,3,1,1,3,1,0
+ACM SIGCOMM Computer Communication Review,ACM,ACM Digital Library,,,0146-4833,n/a,54,0,54,5,5,5,4,9,8,1,8,3,0,2,4
+ACM Computing Surveys (CSUR),ACM,ACM Digital Library,,,0360-0300,1557-7341,58,0,58,3,6,6,3,8,1,7,6,9,5,4,0
+International Journal of Reconfigurable Computing,ACM,ACM Digital Library,,,1687-7195,1687-7209,4,0,4,0,3,0,0,0,0,0,0,0,1,0,0
+"ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)",ACM,ACM Digital Library,,,1551-6857,1551-6865,7,0,7,0,2,0,0,0,1,0,0,2,2,0,0
+ACM Transactions on Computer Systems (TOCS),ACM,ACM Digital Library,,,0734-2071,1557-7333,11,0,10,0,1,0,1,3,0,0,0,0,3,3,0
+EURASIP Journal on Applied Signal Processing,ACM,ACM Digital Library,,,1110-8657,n/a,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+ACM Transactions on Information Systems (TOIS),ACM,ACM Digital Library,,,1046-8188,1558-2868,6,0,6,0,1,0,0,1,0,0,0,2,2,0,0
+ACM Transactions on the Web (TWEB),ACM,ACM Digital Library,,,1559-1131,1559-114X,3,0,3,0,1,0,0,0,0,0,0,0,0,2,0
+ACM Transactions on Intelligent Systems and Technology (TIST),ACM,ACM Digital Library,,,2157-6904,2157-6912,27,0,27,0,1,0,0,2,1,0,1,0,0,22,0
+Journal of Experimental Algorithmics (JEA),ACM,ACM Digital Library,,,1084-6654,1084-6654,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+Linux Journal,ACM,ACM Digital Library,,,1075-3583,n/a,4,3,1,0,1,2,0,0,0,0,0,0,0,1,0
+Ubiquity,ACM,ACM Digital Library,,,n/a,1530-2180,14,14,0,0,1,1,2,3,0,4,1,0,0,1,1
+ACM Journal on Emerging Technologies in Computing Systems (JETC),ACM,ACM Digital Library,,,1550-4832,1550-4840,18,0,18,0,0,2,4,5,2,0,1,1,1,1,1
+ACM Transactions on Reconfigurable Technology and Systems (TRETS),ACM,ACM Digital Library,,,1936-7406,1936-7414,11,0,11,0,0,2,4,1,0,0,1,2,1,0,0
+Computers in Entertainment (CIE),ACM,ACM Digital Library,,,n/a,1544-3574,20,2,18,0,0,2,2,6,0,7,0,0,1,0,2
+Mobile Networks and Applications,ACM,ACM Digital Library,,,n/a,n/a,2,0,2,0,0,2,0,0,0,0,0,0,0,0,0
+The VLDB Journal &#8212; The International Journal on Very Large Data Bases,ACM,ACM Digital Library,,,1066-8888,n/a,20,0,20,0,3,0,0,3,2,2,3,0,4,1,2
+Journal of Computing Sciences in Colleges,ACM,ACM Digital Library,,,1937-4771,1937-4763,12,0,12,0,0,2,0,0,2,3,1,1,0,2,1
+ACM SIGSOFT Software Engineering Notes,ACM,ACM Digital Library,,,0163-5948,n/a,16,0,16,0,0,1,8,0,2,1,0,1,2,0,1
+ACM Transactions on Computing Education (TOCE),ACM,ACM Digital Library,,,n/a,1946-6226,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+ACM Transactions on Information and System Security (TISSEC),ACM,ACM Digital Library,,,1094-9224,1557-7406,5,0,5,0,0,1,0,0,1,0,1,1,1,0,0
+Wireless Networks,ACM,ACM Digital Library,,,1022-0038,n/a,11,0,11,0,0,1,1,2,2,0,3,1,1,0,0
+ACM Transactions on Programming Languages and Systems (TOPLAS),ACM,ACM Digital Library,,,0164-0925,1558-4593,6,0,6,0,0,0,1,1,2,0,0,0,1,1,0
+International Journal of Computer Games Technology,ACM,ACM Digital Library,,,1687-7047,1687-7055,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+Personal and Ubiquitous Computing,ACM,ACM Digital Library,,,1617-4909,n/a,4,0,4,0,0,0,1,0,1,0,1,0,0,0,1
+ACM Transactions on Accessible Computing (TACCESS),ACM,ACM Digital Library,,,1936-7228,1936-7236,3,0,3,0,0,0,0,2,0,0,1,0,0,0,0
+ACM Transactions on Autonomous and Adaptive Systems (TAAS),ACM,ACM Digital Library,,,1556-4665,1556-4703,2,0,2,0,0,0,1,1,0,0,0,0,0,0,0
+ACM SIGMIS Database,ACM,ACM Digital Library,,,0095-0033,n/a,2,0,2,0,0,0,1,0,0,0,0,0,0,0,1
+ACM Transactions on Management Information Systems (TMIS),ACM,ACM Digital Library,,,n/a,2158-6578,2,0,2,0,0,0,0,1,1,0,0,0,0,0,0
+Human-Computer Interaction,ACM,ACM Digital Library,,,0737-0024,1532-7051,6,0,6,0,0,0,0,1,5,0,0,0,0,0,0
+ACM SIGIR Forum,ACM,ACM Digital Library,,,0163-5840,n/a,4,0,4,0,0,0,0,0,2,2,0,0,0,0,0
+ACM Inroads,ACM,ACM Digital Library,,,2153-2184,2153-2192,3,0,3,0,0,0,0,1,0,2,0,0,0,0,0
+ACM SIGHIT Record,ACM,ACM Digital Library,,,n/a,2158-8813,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+Crossroads,ACM,ACM Digital Library,,,1528-4972,1528-4980,4,2,2,0,0,0,0,1,0,0,2,0,1,0,0
+ACM Transactions on Algorithms (TALG),ACM,ACM Digital Library,,,1549-6325,1549-6333,2,0,2,0,0,0,0,1,0,0,1,0,0,0,0
+IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB),ACM,ACM Digital Library,,,1545-5963,n/a,15,0,15,0,0,0,0,0,1,5,1,1,2,2,3
+International Journal of Telemedicine and Applications,ACM,ACM Digital Library,,,1687-6415,1687-6423,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+Journal of Electrical and Computer Engineering,ACM,ACM Digital Library,,,2090-0147,2090-0155,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+ACM SIGWEB Newsletter,ACM,ACM Digital Library,,,1931-1745,1931-1435,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+ACM Transactions on Internet Technology (TOIT),ACM,ACM Digital Library,,,1533-5399,1557-6051,2,0,2,0,0,0,1,0,0,0,0,0,0,1,0
+Journal of Biomedical Imaging,ACM,ACM Digital Library,,,1687-4188,1687-4196,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+"IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP)",ACM,ACM Digital Library,,,2329-9290,2329-9304,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+Quantum Information & Computation,ACM,ACM Digital Library,,,1533-7146,n/a,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+Evolutionary Computation,ACM,ACM Digital Library,,,1063-6560,1530-9304,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+ACM Communications in Computer Algebra,ACM,ACM Digital Library,,,1932-2240,n/a,2,0,2,0,0,0,0,0,0,0,0,0,2,0,0
+EURASIP Journal on Advances in Signal Processing,ACM,ACM Digital Library,,,1110-8657,n/a,2,0,2,0,0,0,0,0,0,0,0,0,0,2,0
+ACM Transactions on Applied Perception (TAP),ACM,ACM Digital Library,,,1544-3558,1544-3965,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Journal on Computing and Cultural Heritage (JOCCH),ACM,ACM Digital Library,,,1556-4673,1556-4711,2,0,2,0,0,0,0,0,0,0,0,2,0,0,0
+"XRDS: Crossroads, The ACM Magazine for Students",ACM,ACM Digital Library,,,1528-4972,1528-4980,2,0,2,0,0,0,0,0,0,0,0,2,0,0,0
+Computational Intelligence and Neuroscience,ACM,ACM Digital Library,,,1687-5265,1687-5273,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+ACM SIGAPL APL Quote Quad,ACM,ACM Digital Library,,,0163-6006,n/a,2,0,2,0,0,0,0,0,0,0,0,0,1,0,1
+Journal of Control Science and Engineering,ACM,ACM Digital Library,,,1687-5249,1687-5257,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+Computational Linguistics,ACM,ACM Digital Library,,,0891-2017,n/a,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+ACM SIGMAP Bulletin,ACM,ACM Digital Library,,,0163-5786,1931-1184,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0

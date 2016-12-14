@@ -1,0 +1,244 @@
+
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+    	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+  <%= stylesheet_link_tag "bootstrap.css" %> 
+
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+  <%= stylesheet_link_tag "style.css" %> 
+
+<!-- font CSS -->
+
+<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<!-- font-awesome icons -->
+  <%= stylesheet_link_tag "font.css" %> 
+  <%= stylesheet_link_tag "font-awesome.css" %> 
+
+<!-- //font-awesome icons -->
+
+<%= javascript_include_tag "jquery2.0.3.min.js" %>
+<%= javascript_include_tag "bootstrap.js" %>
+<%= javascript_include_tag "custom.min.js" %>
+<%= javascript_include_tag "modernizr.js" %>
+
+<!--<script src="js/jquery.cookie.js"></script>
+-->
+		
+
+  <%= stylesheet_link_tag "morris.css" %> 
+
+<!-- //charts -->
+<!--skycons-icons-->
+<!--<script src="js/skycons.js"></script>
+--><!--//skycons-icons-->
+
+
+<!--test collapse-->
+<!-- FastClick -->
+  <%= stylesheet_link_tag "custom.min.css" %> 
+
+
+<!-- Use non-conflicting mode to avoid conflicts with any existing JQuery Library or New One -->
+
+<%= javascript_include_tag "jquery.autocomplete.js" %>
+<%= javascript_include_tag "jquery-custom-1.4.2.min.js" %>
+
+
+<script type="text/javascript">
+       //create this naming for Jquery 1.4.2 version
+       var jQuery_1_4_2 = jQuery.noConflict(true);
+</script>
+<!-- ********JQuery Non-Conflicting library for autoComplete End******** -->
+
+  <%= stylesheet_link_tag "autosuggest_style.css" %> 
+
+        <!-- HTTP 1.1 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="AppFuse 2.0" />
+<!-- leave this for stats please -->
+<script type="text/javascript">
+		try 
+		{			
+			document.execCommand("BackgroundImageCache", false, true);
+		}
+		catch(err) 
+		{}
+</script>
+
+         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon" />
+        <title>Welcome to Online Statistics Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
+  
+
+    </head>
+
+ <body  class="dashboard-page">
+<nav class="main-menu">
+		
+	<%= render :partial => '/layouts/side_bar_navigation'%>
+
+    <%= render :partial => '/layouts/header'%>
+
+	</nav>
+ 
+ <section class="wrapper scrollable">
+ 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+
+
+
+
+
+<div class="row-fluid" style="margin-bottom:50px; min-height:450px;">    
+	<div class="main-grid" >
+			   <div class="clearfix"></div>
+
+
+			<!-- tables -->
+			  <%= stylesheet_link_tag "table-style.css" %> 
+  <%= stylesheet_link_tag "basictable.css" %> 
+
+			<link rel="stylesheet" type="text/css" href="/images/libraries/css/" />
+			<script type="text/javascript" src="/images/libraries/js/jquery.basictable.min.js"></script>
+			<script type="text/javascript">
+			    $(document).ready(function() {
+			      $('#table').basictable();
+
+			      $('#table-breakpoint').basictable({
+			        breakpoint: 768
+			      });
+
+			      $('#table-swap-axis').basictable({
+			        swapAxis: true
+			      });
+
+			      $('#table-force-off').basictable({
+			        forceResponsive: false
+			      });
+
+			      $('#table-no-resize').basictable({
+			        noResize: true
+			      });
+
+			      $('#table-two-axis').basictable();
+
+			      $('#table-max-height').basictable({
+			        tableWrapper: true
+			      });
+			    });
+			</script>
+			    <!-- header end -->
+			    <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li>
+			         <li><a href="/loginpage/accessdetails">Access Details</a></li>
+			     </ol>
+
+			    <h4 >Selected Platforms</h4>
+			    <br>
+			    <p class="pad-top10 mar-btm20">This section allows the library to review the list of platforms it has selected for inclusion in MPSScholarlystats reports, and the reports that should be collected for each collection platform. On request, we can provide an option to select additional reports or collection platforms.</p>
+			   <br>
+			    <!--breadcrumb Ends-->
+			    <style>
+				.green{color:green;font-weight: bold}
+			    </style>
+
+
+			<div class="clearfix">
+					<div class="agile-grids">
+						<div class="col-md-12" style="padding:0px;">
+					    <div class="span12">
+					      <div class="col-md-12" >
+						      <div class="well">
+					         <div class="table-responsive"> 
+					         <h4>
+					         	Library Details
+					         </h4>
+					         Library name:<%= @accounts.name %><br>
+					         Max no.of platforms: 520 <br>
+					         Selected no.of platforms:<%= @accounts.number_of_platforms %>
+					         <div class="square-block-selected"></div>Selected reports<div class="square-block-not-available"></div>Report not available<br>
+					        
+											<table>
+											  <thead>
+											    <tr>
+											      <th>Selected Platforms</th>
+											      <th>Collection Platform Name</th>
+											      <th>Collection Platform Code</th>
+											      <th>SUSHI Compliant</th>
+											      <th>Platform Last Processed Date</th>
+											      <th>JR1 </th>
+														<th>JR1a</th>
+														<th>JR2</th>
+														<th>JR3</th>
+														<th>JR5</th>
+														<th>DB1</th>
+														<th>DB2 </th>
+														<th>PR1</th>
+														<th>BR1</th>
+														<th>BR2</th>
+											      <th colspan="3"></th>
+											    </tr>
+											  </thead>
+											  
+											  <tbody>
+
+											  <% @platforms.each do |plat| %>
+										      <tr>
+											      <td><div class="square-block-selected"><br><br></div></td>
+											        <td><%= plat.platform.name %></td>
+											        <td><%= plat.platform.abbrev %></td>
+											        <td>
+											        </td>
+											        <td><%= plat.platform.created_at.strftime("%d-%m-%y") %></td>
+											       <% @repo.each do |asd| %>
+															<td width="50">
+ 																<% if  plat.report.name == asd %>
+														         <div class="square-block-selected"><br><br></div>
+														         <% else%>
+														         <div class="square-block-not-available"><br><br></div>
+												        <%end%>
+												      </td>
+												     <%  end %>
+											      </tr>
+											    <% end %>
+
+											  </tbody>
+												<br>
+					            </table>
+					          </div>
+					      </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+	</div>
+</div>
+
+<%= render :partial => '/layouts/footer'%>
+
+</section>
+</body>
+      
+      
+      
+</html>
+ 

@@ -1,0 +1,37 @@
+<%= form_for(:report , url: reports_path) do |f| %>
+
+<div class="field">
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</div>
+
+
+
+<div class="field">
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+</div>
+
+
+
+<div class="field">
+	<%= f.label :format %>
+	<%= f.text_field :format %>
+</div>
+
+<div class="field">
+	<%= f.label :created_by %>
+	<%= f.text_field :created_by %>
+</div>
+
+<div class="field">
+	<%= f.label :updated_by %>
+	<%= f.text_field :updated_by %>
+</div>
+
+
+<div class="actions">
+	<%= f.submit %>
+</div>
+
+<% end %>

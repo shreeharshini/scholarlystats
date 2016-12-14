@@ -1,0 +1,32 @@
+<%= form_for(@source_report, url: source_reports_mappings_path(@source_reports)) do |f| %>
+
+<div class="field">
+<%= f.select :report_id , getreports %>
+</div>
+
+<div class="field">
+		
+<%= f.select :platform_id, getplatforms %>
+
+</div>
+
+<div class="field">
+	<%= f.label :month%>
+	<%= f.text_field :month%>
+</div>
+
+<div class="field">
+	<%= f.label :year%>
+	<%= f.text_field :year%>
+</div>
+
+
+<div class="field">
+	<%= f.select :account_id, getaccounts %>
+</div>
+
+<div class="actions">
+	<%= f.submit %>
+</div>
+
+<% end %>

@@ -1,0 +1,2 @@
+class Requestfordemo < ApplicationRecord
+end

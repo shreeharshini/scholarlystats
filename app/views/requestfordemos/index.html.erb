@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Requestfordemos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Library</th>
+      <th>Number</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requestfordemos.each do |requestfordemo| %>
+      <tr>
+        <td><%= requestfordemo.username %></td>
+        <td><%= requestfordemo.email %></td>
+        <td><%= requestfordemo.library %></td>
+        <td><%= requestfordemo.number %></td>
+        <td><%= requestfordemo.message %></td>
+        <td><%= link_to 'Show', requestfordemo %></td>
+        <td><%= link_to 'Edit', edit_requestfordemo_path(requestfordemo) %></td>
+        <td><%= link_to 'Destroy', requestfordemo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Requestfordemo', new_requestfordemo_path %>
+<%= link_to 'Back', home_index_path %>

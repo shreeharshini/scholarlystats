@@ -1,0 +1,205 @@
+
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+    	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+			  <%= stylesheet_link_tag "bootstrap.css" %> 
+
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+			  <%= stylesheet_link_tag "style.css" %> 
+
+<!-- font CSS -->
+
+			  <%= stylesheet_link_tag "//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin" %> 
+
+  			  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Raleway" %> 
+
+<!-- font-awesome icons -->
+			  <%= stylesheet_link_tag "font.css" %> 
+
+			  <%= stylesheet_link_tag "font-awesome.css" %> 
+
+<!-- //font-awesome icons -->
+<%= javascript_include_tag "jquery2.0.3.min.js" %>
+
+<%= javascript_include_tag "bootstrap.js" %>
+
+<%= javascript_include_tag "custom.min.js" %>
+
+
+<%= javascript_include_tag "modernizr.js" %>
+
+<!--<script src="js/jquery.cookie.js"></script>
+-->
+		
+
+			  <%= stylesheet_link_tag "morris.css" %> 
+
+<!-- //charts -->
+<!--skycons-icons-->
+<!--<script src="js/skycons.js"></script>
+--><!--//skycons-icons-->
+
+
+<!--test collapse-->
+<!-- FastClick -->
+			  <%= stylesheet_link_tag "custom.min.css" %> 
+
+<!-- Use non-conflicting mode to avoid conflicts with any existing JQuery Library or New One -->
+<%= javascript_include_tag "jquery-custom-1.4.2.min.js" %>
+
+<%= javascript_include_tag "jquery.autocomplete.js" %>
+
+<script type="text/javascript">
+       //create this naming for Jquery 1.4.2 version
+       var jQuery_1_4_2 = jQuery.noConflict(true);
+</script>
+<!-- ********JQuery Non-Conflicting library for autoComplete End******** -->
+
+			  <%= stylesheet_link_tag "autosuggest_style.css" %> 
+
+        <!-- HTTP 1.1 -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="AppFuse 2.0" />
+<!-- leave this for stats please -->
+<link rel="icon" href="/images/favicon.ico" />
+
+     
+
+    </head>
+
+ <body  class="dashboard-page">
+
+  	<nav class="main-menu">
+		
+		<%= render :partial => '/layouts/side_bar_navigation'%>
+
+    <%= render :partial => '/layouts/header'%>
+
+	</nav>
+ 
+ <section class="wrapper scrollable">
+ 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+
+
+
+
+
+<div class="row-fluid" style="margin-bottom:50px; min-height:450px;">    
+	<div class="main-grid" >
+			   <div class="clearfix"></div>
+
+
+			<!-- tables -->
+						  <%= stylesheet_link_tag "table-style.css" %> 
+
+						  <%= stylesheet_link_tag "basictable.css" %> 
+
+			<script type="text/javascript" src="/images/libraries/js/jquery.basictable.min.js"></script>
+			<script type="text/javascript">
+			    $(document).ready(function() {
+			      $('#table').basictable();
+
+			      $('#table-breakpoint').basictable({
+			        breakpoint: 768
+			      });
+
+			      $('#table-swap-axis').basictable({
+			        swapAxis: true
+			      });
+
+			      $('#table-force-off').basictable({
+			        forceResponsive: false
+			      });
+
+			      $('#table-no-resize').basictable({
+			        noResize: true
+			      });
+
+			      $('#table-two-axis').basictable();
+
+			      $('#table-max-height').basictable({
+			        tableWrapper: true
+			      });
+			    });
+			</script>
+			    <!-- header end -->
+			    <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li>
+			         <li><a href="/loginpage/accessdetails">Access Details</a></li>
+			     </ol>
+
+			    <h4 >Access Details</h4>
+			    <br>
+			    <p class="pad-top10 mar-btm20">Access Details are the credentials that are used to collect the usage reports from the platform interface. This section allows the library to enter or modify the Platform Access Details for the collection platforms that MPSScholarlystats will access for the library.</p>
+			   <br>
+			    <!--breadcrumb Ends-->
+			    <style>
+				.green{color:green;font-weight: bold}
+			    </style>
+
+
+			<div class="clearfix">
+					<div class="agile-grids">
+						<div class="col-md-12" style="padding:0px;">
+					    <div class="span12">
+					      <div class="col-md-12" >
+						      <div class="well">
+					         <div class="table-responsive"> 
+											<table>
+											  <thead>
+											    <tr>
+											      <th>Platform</th>
+											      <th>Collection Platform Name</th>
+											      <th>Edit options</th>
+											      <th colspan="3"></th>
+											    </tr>
+											  </thead>
+
+											  <tbody>
+											    <% @platforms.each do |platform| %>
+											      <tr>
+											        <td><%= platform.abbrev %></td>
+											        <td><%= platform.name %></td>
+											        <td>
+											        <%= link_to image_tag("edit.jpg", :alt => "Image Description", :class => "css", :size => "50x50"), edit_platform_path(platform) %>			
+															</td>
+											      </tr>
+											    <% end %>
+											  </tbody>
+												<br>
+					            </table>
+					          </div>
+					      </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+	</div>
+</div>
+
+<%= render :partial => '/layouts/footer'%>
+
+</section>
+</body>
+      
+      
+      
+</html>
+ 

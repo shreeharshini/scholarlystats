@@ -1,0 +1,6 @@
+<%= line_chart YearTrend.all.collect { |goal| 
+  {
+    
+    :data => goal.YearTopJournal.group(:journal_title).count 
+  } 
+} %>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<head>
+<title>Scholarly-stats</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link rel="stylesheet" href="bootstrap.css">
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+<link href="style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="font.css" type="text/css"/>
+<link href="font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<script src="jquery2.0.3.min.js"></script>
+<script src="modernizr.js"></script>
+
+		
+
+<link rel="stylesheet" href="morris.css">
+<!-- //charts -->
+<!--skycons-icons-->
+<script src="skycons.js"></script>
+<!--//skycons-icons-->
+
+<!-- tables -->
+<link rel="stylesheet" type="text/css" href="table-style.css" />
+<link rel="stylesheet" type="text/css" href="basictable.css" />
+<script type="text/javascript" src="js/jquery.basictable.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#table').basictable();
+
+      $('#table-breakpoint').basictable({
+        breakpoint: 768
+      });
+
+      $('#table-swap-axis').basictable({
+        swapAxis: true
+      });
+
+      $('#table-force-off').basictable({
+        forceResponsive: false
+      });
+
+      $('#table-no-resize').basictable({
+        noResize: true
+      });
+
+      $('#table-two-axis').basictable();
+
+      $('#table-max-height').basictable({
+        tableWrapper: true
+      });
+    });
+</script>
+
+
+</head>
+<body class="dashboard-page">
+	
+	<%= render :partial => '/layouts/side_bar_navigation'%>
+
+	<%= render :partial => '/layouts/header'%>
+        
+	
+		<div class="main-grid">
+        
+        <br>
+        <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li> <li><a href="/loginpage/report">Counter and Custom Reports</a></li>  </ol>
+        
+	
+
+
+<div class="">
+  <div class="row">
+  
+  <div class="col-sm-6 "><div class="acnt-heading"><strong>Account Name</strong> : UCR Riverside Libraries</div></div>
+  <div class="col-sm-4 text-right" style="padding: 0px;margin-top: 0px;">
+  
+ <label style="padding-top:5px;" class="col-sm-6"> Reporting period: </label><div class="col-sm-6"> <select class="form-control">
+							<option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+						</select></div>
+   
+ </div>
+  
+  </div>
+</div>
+
+
+
+<br>
+
+
+<div class="agile-Updating-grids"> 
+ <div class="agile-grids">
+		<div class="col-md-12" style="padding:0px;">
+					
+				 <h4 class="mar-btm20">COUNTER Reports</h4>
+					  <div class="table-responsive"> 
+					  	<table class="table table-striped" >
+									<thead>
+									  <tr>
+										<th align="left">Report Type</th>
+										<th align="left">	Description</th>
+										<th align="left">CSV</th>
+										<th align="left">XLS</th>
+										<th align="left">ZIP</th>
+										<th align="left">Charts</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										</a></span></td>
+										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										</a></span></td>
+										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
+										</a></td>
+										<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%>
+										<%= image_tag("bar-chart.png")%></a></td>
+									  </tr>
+									    <tr>
+										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										</a></span></td>
+										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										</a></span></td>
+										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
+										</a></td>
+										<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%>
+										</a></td>
+									  </tr>
+									   <tr>
+										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										</a></span></td>
+										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										</a></span></td>
+										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
+										</a></td>
+										<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%>
+										</a></td>
+									  </tr>
+									    <tr>
+										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										</a></span></td>
+										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										</a></span></td>
+										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
+										</a></td>
+										<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%>
+										</a></td>
+									  </tr>
+									   <tr>
+										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										</a></span></td>
+										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										</a></span></td>
+										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
+										</a></td>
+										<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%>
+										</a></td>
+									  </tr>
+									</tbody>
+					  </table>
+					</div>
+					<!-- //updating-data -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+	</div>		
+			
+    <br>
+    <div class="agile-Updating-grids">  <div class="agile-grids">
+				
+				<div class="col-md-12" style="padding:0px;">
+					<!-- updating-data -->
+					
+					  <h4 class="mar-btm20">Cost Reports</h4>
+					   
+                    <div class="table-responsive"> <table class="table table-striped" >
+						<thead>
+						  <tr>
+							<th align="left">Report Type</th>
+							<th align="left">	Description</th>
+							<th align="left">CSV</th>
+							<th align="left">XLS</th>
+							<th align="left">ZIP</th>
+							<th align="left">Charts</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td data-th="Name"><span class="bt-content"><a href="#">Price per Use</a></span></td>
+							<td data-th="Age"><span class="bt-content">Price per Use</span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+							</a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+							</a></span></td>
+							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
+							</a></td>
+							<td data-th="Sport">_</td>
+						  </tr>
+						</tbody>
+					  </table>
+					</div>
+					<!-- //updating-data -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+	</div>
+    <br>
+    <div class="">
+    <div class="agile-Updating-grids">  <div class="agile-grids">
+				
+				<div class="col-md-12" style="padding:0px;">
+					<!-- updating-data -->
+					
+					  <h4 class="mar-btm20">Custom Reports</h4>
+                    <div class="table-responsive"> <table class="table table-striped" >
+						<thead>
+						  <tr>
+							<th align="left">Report Type</th>
+							<th align="left">	Description</th>
+							<th align="left">CSV</th>
+							<th align="left">XLS</th>
+							<th align="left">ZIP</th>
+							<th align="left">Charts</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
+							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
+						  </tr>
+						    <tr>
+							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
+							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
+						  </tr>
+						   <tr>
+							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
+							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
+						  </tr>
+						    <tr>
+							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
+							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
+						  </tr>
+						   <tr>
+							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
+							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
+							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
+						  </tr>
+						</tbody>
+					  </table>
+					</div>
+					<!-- //updating-data -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+	</div>	
+   </div>	
+	  </div>
+		<!-- footer -->
+		<%= render :partial => '/layouts/footer'%>
+
+		<!-- //footer -->
+	</section>
+	<script src="js/bootstrap.js"></script>
+	
+  
+</body>
+</html>

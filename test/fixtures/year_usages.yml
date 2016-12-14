@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Institution_Code: MyString
+  Report_Type: MyString
+  YTD: 1
+
+two:
+  Institution_Code: MyString
+  Report_Type: MyString
+  YTD: 1

@@ -1,0 +1,2 @@
+module LibraryAccountDetailsHelper
+end

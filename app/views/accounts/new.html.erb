@@ -1,0 +1,30 @@
+
+<%= form_for(:accounts, url: accounts_path) do |f| %>
+
+<div class="field">
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</div>
+<div class="field">
+	<%= f.label :month %>
+	<%= f.text_field :month %>
+</div>
+<div class="field">
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+</div>
+<div class="field">
+	<%= f.label :created_by %>
+	<%= f.text_field :created_by %>
+</div>
+<div class="field">
+	<%= f.label :updated_by %>
+	<%= f.text_field :updated_by %>
+</div>
+<div class="actions">
+	<%= f.submit %>
+</div>
+
+<% end %>
+
+

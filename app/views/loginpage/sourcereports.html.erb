@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<head>
+<title>Scholarly-stats</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+--><!-- bootstrap-css -->
+  <%= stylesheet_link_tag "bootstrap.css" %> 
+
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+  <%= stylesheet_link_tag "style.css" %> 
+
+<!-- font CSS -->
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Raleway" %> 
+
+<!-- font-awesome icons -->
+  <%= stylesheet_link_tag "font.css" %> 
+
+  <%= stylesheet_link_tag "font-awesome.css" %> 
+
+<!-- //font-awesome icons -->
+<%= javascript_include_tag "jquery2.0.3.min.js" %>
+
+<%= javascript_include_tag "modernizr.js" %>
+
+<%= javascript_include_tag "application.js" %>
+
+
+	
+
+
+	
+
+</head>
+<body class="dashboard-page">
+
+
+	
+	<nav class="main-menu">
+		
+		<%= render :partial => '/layouts/side_bar_navigation'%>
+
+	  <%= render :partial => '/layouts/header'%>
+
+	</nav>
+	
+		<div class="main-grid">
+        
+        
+        <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li>
+         <li><a href="/loginpage/sourcereports">Source Reports</a></li> 
+        
+        </ol>
+
+<br>
+				  <h4>Source Reports
+</h4>
+<p class="pad-top10 mar-btm20">You need to choose the platform and reporting period to see source reports.
+</p>
+
+
+
+
+
+
+
+<div class="agile-Updating-grids"> 
+	<div class="agile-grids pad-top10">
+      <div class="col-md-5 mb10">
+				<div class="form-group">
+    						<select name="category" id="category" class="form-control">
+                    <option selected value="Please Select">Please Select</option>     
+                          
+                    <option value="pid1">American Association for the Advancement of Science</option>
+                    <option value="pid2">American Chemical Society</option>
+               </select>
+        </div>
+			</div>
+           
+      <div class="col-md-3">
+					<div class="form-group">
+          			<div id="category2">
+                  <select name="category2" class="pid2 second">
+                          <option value="white">2015</option>
+                          <option value="black">2016</option>            
+                  </select>
+
+                  <select name="category2" class="pid1 second">
+                          <option>2013</option>
+                          <option value="red">2014</option>
+                          <option value="green">2015</option>
+                          <option value="blue">2016</option>           
+                  </select>
+                </div>
+          </div>
+			</div>
+              
+      <div class="col-sm-12 pad-top20">
+                
+               		 Please click on Get Reports to find the desired platform reports.
+      </div>
+      <div class=" col-sm-2 mt-10">
+ 					<div class="button raised">
+  						 <a href="#" class="hoverable"> 
+	  						 <div class="anim">
+	  						 	
+	  						 </div>
+	  						 <span>Get Reports</span>
+  						 </a>
+   				</div>
+			</div>  
+				<!-- //updating-data
+			</div>
+				<div class="clearfix"> </div>
+	</div>
+</div>		 -->
+			    
+    <br>
+    	
+</div>
+		<!-- footer -->
+
+		<!-- //footer -->
+	</section>
+	<%= javascript_include_tag "bootstrap.js" %>
+
+    
+  <script type="text/javascript">
+  	 $("#category").change(function () {
+  var str = "";
+str =  $("select#category option:selected").text();
+    if(str == "American Chemical Society"){
+        $("#category2").not(".pid2").hide();
+        $("#category2 .pid2").show();
+        $("#category2").fadeIn(1000);
+    }
+    else if(str == "American Association for the Advancement of Science"){
+        $("#category2").not(".pid1").hide();
+        $("#category2 .pid1").show();
+        $("#category2").fadeIn(1000);
+    }
+
+})
+  </script>
+  
+</body>
+</html>

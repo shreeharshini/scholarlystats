@@ -1,0 +1,2 @@
+class YearTopJournal < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+$.log=function(l){var g=$("#logger");g.html(g.html()+"\n * "+l)};

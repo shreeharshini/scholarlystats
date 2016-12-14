@@ -1,0 +1,1 @@
+json.partial! "platform_reports/platform_report", platform_report: @platform_report

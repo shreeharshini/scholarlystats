@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_id: 1
+  platform_id: 1
+  month: 1
+  year: 1
+  account_id: 1
+
+two:
+  report_id: 1
+  platform_id: 1
+  month: 1
+  year: 1
+  account_id: 1
