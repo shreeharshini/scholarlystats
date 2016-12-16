@@ -1,0 +1,3 @@
+class AdditionalUser < ApplicationRecord
+	
+end

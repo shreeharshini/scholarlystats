@@ -1,18 +1,8 @@
-
-
-
-<!DOCTYPE html>
-
-
-
-<html>
-    <head>
-    	
+	
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
 			  <%= stylesheet_link_tag "bootstrap.css" %> 
 
-<!-- //bootstrap-css -->
 <!-- Custom CSS -->
 			  <%= stylesheet_link_tag "style.css" %> 
 
@@ -41,7 +31,7 @@
 -->
 		
 
-			  <%= stylesheet_link_tag "morris.css" %> 
+<%= stylesheet_link_tag "morris.css" %> 
 
 <!-- //charts -->
 <!--skycons-icons-->
@@ -51,7 +41,7 @@
 
 <!--test collapse-->
 <!-- FastClick -->
-			  <%= stylesheet_link_tag "custom.min.css" %> 
+<%= stylesheet_link_tag "custom.min.css" %> 
 
 <!-- Use non-conflicting mode to avoid conflicts with any existing JQuery Library or New One -->
 <%= javascript_include_tag "jquery-custom-1.4.2.min.js" %>
@@ -79,16 +69,16 @@
 
  <body  class="dashboard-page">
 
-  	<nav class="main-menu">
-		
-		<%= render :partial => '/layouts/side_bar_navigation'%>
 
-    <%= render :partial => '/layouts/header'%>
 
-	</nav>
+
  
  <section class="wrapper scrollable">
  
+ 		
+	<%= render :partial => '/layouts/side_bar_navigation'%>
+
+    <%= render :partial => '/layouts/header'%>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -109,7 +99,6 @@
 			<!-- tables -->
 						  <%= stylesheet_link_tag "table-style.css" %> 
 
-						  <%= stylesheet_link_tag "basictable.css" %> 
 
 			<script type="text/javascript" src="/images/libraries/js/jquery.basictable.min.js"></script>
 			<script type="text/javascript">
@@ -160,7 +149,7 @@
 					    <div class="span12">
 					      <div class="col-md-12" >
 						      <div class="well">
-					         <div class="table-responsive"> 
+					         <div class="table-responsive ownTblContent"> 
 											<table>
 											  <thead>
 											    <tr>
@@ -177,7 +166,7 @@
 											        <td><%= platform.abbrev %></td>
 											        <td><%= platform.name %></td>
 											        <td>
-											        <%= link_to image_tag("edit.jpg", :alt => "Image Description", :class => "css", :size => "50x50"), edit_platform_path(platform) %>			
+											        <%= link_to image_tag("edit.gif", :alt => "Image Description", :class => "css", :size => "20x20"), edit_platform_path(platform) %>			
 															</td>
 											      </tr>
 											    <% end %>

@@ -160,8 +160,8 @@ body a:hover{
 	.progress,.progress-bar{-webkit-box-shadow:none;box-shadow:none}
 	.progress{height:25px;margin-bottom:10px}
 	.progress-thin{height:5px}
-	.nav-tabs{background-color:#fff;border-bottom-color:transparent;margin-bottom:0}
-	.nav-tabs>li>a{border:0;border-radius:0;background-color:#fff;color:#999;-webkit-transition:all .1s;transition:all .1s}
+	.nav-tabs{/*background-color:#fff;*/border-bottom-color:transparent;margin-bottom:0 !important;}
+	.nav-tabs>li>a{border:0;border-radius:0;/*background-color:#fff;*/color:#999;-webkit-transition:all .1s;transition:all .1s}
 	.nav-tabs>li>a:hover{color:#666;background-color:#fff;border:0}
 	.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{
 		color:#666;border:0;border-radius:0;background-color:#fff;-webkit-box-shadow:inset 0 -3px 0 0 #76b6ec;box-shadow:inset 0 -3px 0 0 #76b6ec
@@ -486,8 +486,11 @@ body a:hover{
     padding: 3em;
 }
 .dashboard-page .title-bar {
-    position: relative;
+       position: relative;
     display: block;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 10px -2px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px -2px rgba(0,0,0,0.05);
     padding: 15px 42px;
 }
 .logo {
@@ -3703,6 +3706,9 @@ body.signup-body {
     background-color: #d8d8d8;
     color: #000;
 }
+.footer-grid {
+    padding: 0 3em;
+}
 .footer-icons{
     margin: 1.5em 0;
     text-align: center;
@@ -4975,11 +4981,33 @@ span {
 .mb-10{
 	margin-bottom:10px;
 }
+ 
 
+.mt-30 {
+    margin-top: 30px;
+}
 .button.raised a {
   
     color: #fff;
    
+}
+.payment_box {
+    margin: 0 0 100px 0;
+    background: #fff;
+    border: solid 1px #ccc;
+    padding: 40px;
+}
+.payment_box .box_tittle {
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: 300;
+    line-height: 30px;
+}
+.commonTabsContent {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 

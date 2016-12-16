@@ -42,7 +42,7 @@ class PlatformsController < ApplicationController
   def update
     respond_to do |format|
       if @platform.update(platform_params)
-        format.html { redirect_to @platform, notice: 'Platform was successfully updated.' }
+        format.html { redirect_to loginpage_accessdetails_path, notice: 'Platform was successfully updated.' }
         format.json { render :show, status: :ok, location: @platform }
       else
         format.html { render :edit }

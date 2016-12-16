@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<%= render :partial => '/layouts/side_bar_navigation'%>
+<%= render :partial => '/layouts/header'%>
+</head>
+<body>
+
+<br>
+<br>
+
+<div class="container">
+
+<p>
+<br>
+<h3>Account Information</h3>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>User ID</th>
+      <th>Name</th>
+      <th>Email ID</th>
+      <th>Role</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @additional_users.each do |additional_user| %>
+      <tr>
+        <td><%= additional_user.email %></td>
+        <td><%= additional_user.first_name %></td>
+        <td><%= additional_user.email %></td>
+        <td><%= additional_user.role %></td>
+        <td><%= check_box_tag 'accept' %> </td>
+       
+     
+  <td><%= link_to 'Edit', edit_additional_user_path(additional_user) %></td>
+        <td><%= link_to 'Delete', additional_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<input type="button" onclick="window.location = '/additional_users/new'" value="Create New User">
+<input type="button" onclick="window.location = '/additional_users/new'" value="Update">
+
+
+
+    <!-- footer -->
+   <%= render :partial => '/layouts/footer'%>
+    <!-- //footer -->
+  </section>
+  <script src="js/bootstrap.js"></script>
+    
+       
+         <link href='css/date.css' rel='stylesheet prefetch' type="text/css">
+
+     
+<script src="js/date-jquery-ui.min.js"></script>
+
+  <script src="js/date-angular.min.js"></script>
+<script src="js/date.js"></script>
+
+  
+</body>
+</html>

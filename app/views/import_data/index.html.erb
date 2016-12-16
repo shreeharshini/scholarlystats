@@ -1,7 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-    <head>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
@@ -74,86 +71,7 @@
         <link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon" />
         <title>Welcome to Online Statistics Portal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
-     <script type="text/javascript">
-     /* alert(#session.authz); */
      
-$(document).ready(function(){
-	$(".pageLoadContainer").hide();
-});
-     
-     function ltrim(stringToTrim) 
-     {
-		return stringToTrim.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,"").replace(/\s+/g," ");
-	}
-	function rtrim(stringToTrim) {
-	return stringToTrim.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,"").replace(/\s+/g," ");
-}
-     function renderTitle(){
-     	element=document.getElementById("brdcrm");
-     	var titleText="";
-     	if(element!=null){
-			  var ihtml=element.innerHTML;
-		  	  var startTag=0;
-		  	  var  endTag=0;
-		  	  var spaceCheck="";
-    	       for(i=0;i<ihtml.length;i++)
-  				{
-
-		    		if(ihtml.charAt(i) == "<" || ihtml.charAt(i) == "&"){
-						startTag=1;
-						endTag=0;
-					}
-					
-					if(startTag==1){
-						spaceCheck=spaceCheck+ihtml.charAt(i);
-					}
-					
-					if(ihtml.charAt(i) == ">" || ihtml.charAt(i) == ";"){
-						endTag=1;
-						startTag=0;
-						if(spaceCheck=="&nbsp;"){
-							titleText="";
-							spaceCheck="";
-						}
-						if(ihtml.charAt(i)==">"){
-							spaceCheck="";
-						}
-					}
-			
-					if(endTag==1){
-						if(ihtml.charAt(i) != "<" && ihtml.charAt(i) != "&"){
-							if(ihtml.charAt(i) != ">" && ihtml.charAt(i) != ";"){
-								titleText=titleText+ihtml.charAt(i);
-								spaceCheck="";
-							}
-						}
-					}
-					
-					
-			
-					
-   			}
-  		}
-		
-		//titleText=titleText.substring(titleText.indexOf(" "),titleText.length);
-		titleText=ltrim(titleText);
-		titleText=rtrim(titleText);
-		
-		if(titleText== "")
-			{
-	        document.title="Online Statistics Portal "+titleText;
-			}
-		else
-		{
-			document.title="Online Statistics Portal "+"->"+titleText;
-		}
-	     
-
-     }
-     
-     </script>
-     
-
 </style>
 <script type="text/javascript">
 function toggle(node) {
@@ -266,7 +184,8 @@ function useraction(url)
 }
 
 </script>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
 
 
     <%= render :partial => '/layouts/side_bar_navigation'%>
@@ -275,20 +194,18 @@ function useraction(url)
 	
 
 
-<div class="pageLoadContainer" ></div>
-         <div class="row-fluid" style="margin-bottom:50px; min-height:450px;">
-		    <div class="span3">
-		      <div class="sidebar-nav">
-		  			 
-		  	  </div>	  
-			</div>
-			<div class="main-grid" >
-			   <div class="clearfix"></div>
- 			 <br>
-<br> 	
-     <ol class="breadcrumb"> <li><a href="/libraries/dashboard">Home</a></li>
-         <li><a href="/libraries/dashboard">Upload Data</a></li>
-     </ol>
+<!--<div class="pageLoadContainer" ></div>-->
+<div class="row-fluid" style="margin-bottom:50px; min-height:450px;">
+    <div class="span3">
+	      <div class="sidebar-nav">
+  	    </div>	  
+		</div>
+		<div class="main-grid" >
+			  <div class="clearfix"></div>
+ 			  
+		     <ol class="breadcrumb"> <li><a href="/libraries/dashboard">Home</a></li>
+		         <li><a href="/libraries/dashboard">Upload Data</a></li>
+		     </ol>
 
 <div role="tabpanel">
 
@@ -300,19 +217,14 @@ function useraction(url)
      <ul class="nav nav-tabs" role="tablist">
     		<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Upload Cost Data</a></li>
     		<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Upload Manual Data</a></li>
-
-		
- </ul>
+		</ul>
 
   <!-- Tab panes -->
 
 
   <div class="tab-content commonTabsContent">
     <div role="tabpanel" class="tab-pane active" id="home">
-    	
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-
-
+ 
 
 
 <script type="text/javascript" src="/scripts/Encoder.js"></script> 
@@ -340,7 +252,7 @@ function useraction(url)
 		
 	
 	
-	<%= link_to 'xlsx', import_data_xlsx_path %><img src="/images/xls.gif"%> Template	
+	<%= link_to 'xlsx', import_data_xlsx_path %><%= image_tag("xls.gif")%> Template	
 		
 	</p>
     <br>
@@ -351,45 +263,47 @@ function useraction(url)
 </div>	
 <div class = "upload">
 	<div class="table-responsive"> 
-	 <caption><h3 class="color_txt pull-left">Upload File</h3></caption>
+
+	 
 		<table class="table table-striped" id="grid-heading">
+			 <caption><h3 class="color_txt pull-left">Upload File</h3></caption>
 			<tbody>
 				<tr>
+								
+<%= form_for :import_data, url: import_data_path do |f| %> 
+						<input type="hidden" name="collection" id="collection" placeholder="id" value="tempCollection">
+					<td>Choose file to upload cost data for generation of Cost per Usage Reports.</td>
+	        	    <td class="align_center"> <%= f.file_field :attachment%> </td>
+	                <td class="align_center">
+	                	 
 
-					<%= form_for :import_data, url: import_data_path do |f| %>
-						<div class="field">
-							<%= f.file_field :attachment%>
-						</div>
-						<div class="actions">
-							<%= f.submit %>
-						</div>
+	                	<%= f.submit  %>
+	                	  
+    				 
+	                </td>
+	              
 					<% end %>
+
 
 				</tr>
 			</tbody>
 		</table>
+	 
+
+
+	 
+		 
 	</div>
     </div>
-    		<%= render :partial => '/layouts/footer'%>
+    		
 
 </div>
 
     <div role="tabpanel" class="tab-pane" id="profile">
-    	
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
 
 
-
-
-
-<script type="text/javascript" src="/scripts/Encoder.js"></script> 
-<!-- <link rel="stylesheet" href="/images/css/ui/1.9.2/themes/base/jquery-ui.css" /> -->
-
-
-  <!-- tables -->
-<link rel="stylesheet" type="text/css" href="/images/libraries/css/table-style.css" />
-<link rel="stylesheet" type="text/css" href="/images/libraries/css/basictable.css" />
-<script type="text/javascript" src="/images/libraries/js/jquery.basictable.min.js"></script>
+ 
 <script type="text/javascript">
     $(document).ready(function() {
       $('#table').basictable();
@@ -429,38 +343,35 @@ function useraction(url)
 	<p class="pad-top10 mar-btm20">This section allows you to upload your manually collected data, we will add the same data in respective Consolidated Report.</p>
 
 	<br>		
-	<div id="body_container_login1" class="row-fluid">
-
-
-	</div>
-<div class="table-responsive"> 
+		<div id="body_container_login1" class="row-fluid">
+		<div class="table-responsive"> 
+			<table class="table table-striped" id="grid-heading">
 				 <caption><h3 class="color_txt pull-left">Upload Manual Data File</h3></caption>
-
-		<table class="table table-striped" id="grid-heading">
-            <tbody>
-            	<tr>
-					<%= form_for :import_data, url: import_data_path do |f| %>
-
-									<div class="field">
-												<%= f.file_field :attachment%>
-									</div>
-
-									<div class="actions">
-												<%= f.submit %>
-									</div>
-					<% end %>     
-							</tr>
+	            <tbody>
+	            	<tr>
+								<%= form_for :import_data, url: import_data_path do |f| %>
+	 
+						 
+						<td>Choose file to upload Manually collected data. </td>
+		        	    <td class="align_center"> <%= f.file_field :attachment%> </td>
+		                <td class="align_center">
+		                		<%= f.submit%>
+		                </td>
+		             <% end %>
+								</tr>
 						</tbody>
-		</table>
-</div> 
-
+			</table>
+		</div>
+				 
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
 <!--  <div class="navbar navbar-inverse navbar-fixed-bottom version"> -->
+ <!-- </div> -->
 <%= render :partial => '/layouts/footer'%>
-<!-- </div> -->
-
     </section>
-        	</body>
-      
-      
-      
+</body>
 </html>

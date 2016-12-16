@@ -1,87 +1,79 @@
-
+<<<<<<< HEAD
 <!DOCTYPE html>
 <head>
 <title>Scholarly-stats</title>
 <link rel="shortcut icon" href="images/favicon.ico">
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 --><!-- bootstrap-css -->
-<link rel="stylesheet" href="css/bootstrap.css">
   <%= stylesheet_link_tag "bootstrap.css" %> 
 
 <!-- //bootstrap-css -->
 <!-- Custom CSS -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-  <%= stylesheet_link_tag "bootstrap.css" %> 
+  <%= stylesheet_link_tag "style.css" %> 
 
 <!-- font CSS -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag "bootstrap.css" %> 
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Raleway" %> 
 
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="css/font.css" type="text/css"/>
-  <%= stylesheet_link_tag "bootstrap.css" %> 
+  <%= stylesheet_link_tag "font.css" %> 
 
-<link href="css/font-awesome.css" rel="stylesheet"> 
-  <%= stylesheet_link_tag "bootstrap.css" %> 
+  <%= stylesheet_link_tag "font-awesome.css" %> 
 
 <!-- //font-awesome icons -->
-<script src="js/jquery2.0.3.min.js"></script>
-<%= javascript_include_tag "bootstrap.js" %>
+<%= javascript_include_tag "jquery2.0.3.min.js" %>
 
-<script src="js/modernizr.js"></script>
-<%= javascript_include_tag "bootstrap.js" %>
+<%= javascript_include_tag "modernizr.js" %>
 
 
-	
-
-
-	
 
 </head>
 <body class="dashboard-page" ng-app="myApp">
+	<section class="wrapper scrollable">
 	
-	<%= render :partial => '/layouts/side_bar_navigation'%>
+  <script type="text/javascript">
 
-  <%= render :partial => '/layouts/header'%>
+function test(){
+  var e=document.getElementById('selectReportType');
+  var strUser = e.options[e.selectedIndex].text;
+  alert("Report = "+strUser);
+}
+  </script>
+ 
+  
+  <body class="dashboard-page" ng-app="myApp">
+    <%= render :partial => '/layouts/side_bar_navigation'%>
+    <%= render :partial => '/layouts/header'%>
+    <div class="main-grid"><br>
+      <h4>Dynamic Usage Reports</h4>
+      <p class="pad-top10 mar-btm20">This section allows you to view and download reports for a librarian account.</p>
+        
+      <div class="agile-Updating-grids"> 
+        <div class="agile-grids pad-top10">
+          <div class="col-md-5 mb10">
+          
+          <%= form_tag(loginpage_dynamicreports_path, method: :get) do %>
+          <div class="form-group">
+            <label>Select Report Type:</label>
+            <select  id="selectReportType" class="form-control" name="Report">
+             <!--  params = strUser -->
+              <option value="-1">--Select Report Type--</option>
+              <option value="JR1">JR1 (Consolidated Journal Report 1, Consolidated COUNTER JR1 Report of all subscribed Platforms)</option>
+              <option value="JR2">JR2 (Consolidated Journal Report 2, Consolidated COUNTER JR2 Report of all subscribed Platforms)</option>
+              <option value="JR3">JR3 (Consolidated Journal Report 3, Consolidated COUNTER JR3 Report of all subscribed Platforms)</option>
+              <option value="JR1a">JR1a (Consolidated Journal Report 1a, Consolidated COUNTER JR1a Report of all subscribed Platforms)</option>
+              <option value="BR1">BR1 (Consolidated Book Report 1, Consolidated COUNTER BR1 Report of all subscribed Platforms)</option>
+              <option value="BR2">BR2 (Consolidated Book Report 2, Consolidated COUNTER BR2 Report of all subscribed Platforms)</option>
+              <option value="DB1">DB1 (Consolidated Database Report 1, Consolidated COUNTER DB1 Report of all subscribed Platforms)</option>
+              <option value="DB2">DB2 (Consolidated Database Report 2, Consolidated COUNTER DB2 Report of all subscribed Platforms)</option>
+              <option value="PR1">PR1 (Consolidated Platform Report 1, Consolidated COUNTER PR1 Report of all subscribed Platforms)</option>
+            </select>
+                </div>
+                  </div>
 
-
-
-	
-	
-			
-<div class="main-grid">
-        <br>
-        <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li>
-             <li><a href="/loginpage/dynamicreports">Dynamic Reports</a></li>       
-        </ol>
-            
-    <br>
-    				  <h4>Dynamic Usage Reports</h4>
-    <p class="pad-top10 mar-btm20">This section allows you to view and download reports for a librarian account.
-    </p>
-
-    	<div class="agile-Updating-grids"> 
-       <div class="agile-grids pad-top10">
-          <div class="col-md-5 mb10">				
-            <div class="form-group">
-    									<label>Select Report Type:</label>
-              <select name="report" id="selectReportType" class="form-control">
-                  <option value="-1">--Select Report Type--</option>
-                  <option value="JR1 (Consolidated Journal Report 1, Consolidated COUNTER JR1 Report of all subscribed Platforms)">JR1 (Consolidated Journal Report 1, Consolidated COUNTER JR1 Report of all subscribed Platforms)</option>
-                  <option value="JR2 (Consolidated Journal Report 2, Consolidated COUNTER JR2 Report of all subscribed Platforms)">JR2 (Consolidated Journal Report 2, Consolidated COUNTER JR2 Report of all subscribed Platforms)</option>
-                  <option value="JR3 (Consolidated Journal Report 3, Consolidated COUNTER JR3 Report of all subscribed Platforms)">JR3 (Consolidated Journal Report 3, Consolidated COUNTER JR3 Report of all subscribed Platforms)</option>
-                  <option value="JR1a (Consolidated Journal Report 1a, Consolidated COUNTER JR1a Report of all subscribed Platforms)">JR1a (Consolidated Journal Report 1a, Consolidated COUNTER JR1a Report of all subscribed Platforms)</option>
-                  <option value="BR1 (Consolidated Book Report 1, Consolidated COUNTER BR1 Report of all subscribed Platforms)">BR1 (Consolidated Book Report 1, Consolidated COUNTER BR1 Report of all subscribed Platforms)</option>
-                  <option value="BR2 (Consolidated Book Report 2, Consolidated COUNTER BR2 Report of all subscribed Platforms)">BR2 (Consolidated Book Report 2, Consolidated COUNTER BR2 Report of all subscribed Platforms)</option>
-                  <option value="DB1 (Consolidated Database Report 1, Consolidated COUNTER DB1 Report of all subscribed Platforms)">DB1 (Consolidated Database Report 1, Consolidated COUNTER DB1 Report of all subscribed Platforms)</option>
-                  <option value="DB2 (Consolidated Database Report 2, Consolidated COUNTER DB2 Report of all subscribed Platforms)">DB2 (Consolidated Database Report 2, Consolidated COUNTER DB2 Report of all subscribed Platforms)</option>
-                  <option value="PR1 (Consolidated Platform Report 1, Consolidated COUNTER PR1 Report of all subscribed Platforms)">PR1 (Consolidated Platform Report 1, Consolidated COUNTER PR1 Report of all subscribed Platforms)</option>
-               </select>
-    				</div>
-    			</div>
            
           <div class="col-sm-12 pad-top20 mb-10">
             <div class="col-sm-2" style="padding:0px;">
@@ -131,7 +123,7 @@
 				<div class="clearfix"> </div>
 			</div>
 	</div>		
-			
+	<%end%>		
 
     
     <br>
@@ -144,16 +136,16 @@
 	<script src="js/bootstrap.js"></script>
     
        
-	       <link href='css/date.css' rel='stylesheet prefetch' type="text/css">
-           <%= stylesheet_link_tag "bootstrap.css" %> 
+           <%= stylesheet_link_tag "date.css" %> 
 
 
 	   
-<script src="js/date-jquery-ui.min.js"></script>
-<%= javascript_include_tag "bootstrap.js" %>
+<%= javascript_include_tag "date-jquery-ui.min.js" %>
 
 
 <%= javascript_include_tag "date-angular.min.js" %>
+
+</section>
 
 <%= javascript_include_tag "date.js" %>
 

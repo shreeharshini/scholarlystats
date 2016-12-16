@@ -63,11 +63,14 @@
 
 
 </head>
-<body class="dashboard-page">
-	
-	<%= render :partial => '/layouts/side_bar_navigation'%>
+<body  class="dashboard-page">
+ 
+ 
+ <section class="wrapper scrollable">
+  
+  <%= render :partial => '/layouts/side_bar_navigation'%>
 
-	<%= render :partial => '/layouts/header'%>
+        <%= render :partial => '/layouts/header'%>
         
 	
 		<div class="main-grid">
@@ -123,9 +126,9 @@
 									  <tr>
 										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										<td data-th="Gender"><span class="bt-content"><a href="export_files/csv"><%= image_tag("csv.png")%>
 										</a></span></td>
-										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%>
 										</a></span></td>
 										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
 										</a></td>
@@ -135,9 +138,9 @@
 									    <tr>
 										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%>
 										</a></span></td>
-										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%>
 										</a></span></td>
 										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
 										</a></td>
@@ -147,9 +150,9 @@
 									   <tr>
 										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%>
 										</a></span></td>
-										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%>
 										</a></span></td>
 										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
 										</a></td>
@@ -159,9 +162,9 @@
 									    <tr>
 										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%>
 										</a></span></td>
-										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%>
 										</a></span></td>
 										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
 										</a></td>
@@ -171,9 +174,9 @@
 									   <tr>
 										<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 										<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-										<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+										<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%>
 										</a></span></td>
-										<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+										<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%>
 										</a></span></td>
 										<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
 										</a></td>
@@ -212,9 +215,9 @@
 						  <tr>
 							<td data-th="Name"><span class="bt-content"><a href="#">Price per Use</a></span></td>
 							<td data-th="Age"><span class="bt-content">Price per Use</span></td>
-							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%>
+							<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%>
 							</a></span></td>
-							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%>
+							<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%>
 							</a></span></td>
 							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%>
 							</a></td>
@@ -251,40 +254,40 @@
 						  <tr>
 							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
-							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
 							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
 							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
 						  </tr>
 						    <tr>
 							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
-							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
 							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
 							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
 						  </tr>
 						   <tr>
 							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
-							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
 							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
 							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
 						  </tr>
 						    <tr>
 							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
-							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
 							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
 							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
 						  </tr>
 						   <tr>
 							<td data-th="Name"><span class="bt-content"><a href="#">Consolidated Journal Report 1</a></span></td>
 							<td data-th="Age"><span class="bt-content">Consolidated COUNTER JR1 Report of all subscribed Platforms</span></td>
-							<td data-th="Gender"><span class="bt-content"><a href="/download_files/csv"><%= image_tag("csv.png")%></a></span></td>
-							<td data-th="Height"><span class="bt-content"><a href="/download_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
+							<td data-th="Gender"><span class="bt-content"><a href="/export_files/csv"><%= image_tag("csv.png")%></a></span></td>
+							<td data-th="Height"><span class="bt-content"><a href="/export_files/xlsx"><%= image_tag("xls.png")%></a></span></td>
 							<td data-th="Province"><a href="/download_files/zip"><%= image_tag("zip-file-format.png")%></a></td>
 							<td data-th="Sport"><a href="#"><%= image_tag("bar-chart.png")%></a></td>
 						  </tr>
@@ -304,7 +307,7 @@
 		<!-- //footer -->
 	</section>
 	<script src="js/bootstrap.js"></script>
-	
+
   
 </body>
 </html>

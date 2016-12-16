@@ -1,59 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
+
 	<title>FAQs</title>
+
+</head>
+<body class="dashboard-page">
+ <section class="wrapper scrollable">
+  
   <%= render :partial => '/layouts/side_bar_navigation'%>
 
-    <%= render :partial => '/layouts/header'%>
-</head>
-<body>
+  <%= render :partial => '/layouts/header'%>
 
  <br>
  <br>
+
+
+
+
+<div class="row-fluid" style="margin-bottom:50px; min-height:450px;">    
+  <div class="main-grid" >
+
+           <div class="clearfix"></div>
+
+
+  <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li>
+               <li><a href="/support/faq">FAQ's</a></li>
+</ol>
 
 <div class="navbar navbar-sidebar-nav" id="accordion">
-
-<div class="container">
-
-    <div class="faq">
-                 
-                <div class="heading">
-                  <h6>COUNTER </h6>
-                </div>
-                <h6>
-                  <a data-toggle="collapse" href="#collapse1">WHAT IS COUNTER AND WHAT DOES IT STAND FOR?</a>
-                </h6>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse">
-                <ul class="list-group">
-                  <li class="list-group-item"><p>
-                  	COUNTER (Counting Online Usage of NeTworked Electronic Resources) is an initiative formed by libraries and publishers to insure consistent usage in reporting. COUNTER also requires specific reports and definition of usage terms for COUNTER compliance. The COUNTER Codes of Practice provides a set of standards and protocols governing the recording and exchange of online usage data. To learn more about COUNTER, visit www.projectcounter.org.
-                  </p></li>
-                </ul>
-             </div>
-      
+  <div class="container">
+      <div class="faq">
+                  <div class="heading">
+                    <br>
+                    <h6>COUNTER </h6>
+                    <br>
+                  </div>
+                  <h6>
+                    <a data-toggle="collapse" href="#collapse1">WHAT IS COUNTER AND WHAT DOES IT STAND FOR?</a>
+                  </h6>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item"><p>
+                    	COUNTER (Counting Online Usage of NeTworked Electronic Resources) is an initiative formed by libraries and publishers to insure consistent usage in reporting. COUNTER also requires specific reports and definition of usage terms for COUNTER compliance. The COUNTER Codes of Practice provides a set of standards and protocols governing the recording and exchange of online usage data. To learn more about COUNTER, visit www.projectcounter.org.
+                    </p></li>
+                  </ul>
+      </div>
   </div>
 </div>
+
 <div class="navbar navbar-sidebar-nav" id="accordion">
   <div class="container">
     <div class="faq">
          
               <div class="heading">
                 <h6>Log in, Access & Browser Requirements </h6> 
-                </div>
+              </div>
                 <h6>
                   <a data-toggle="collapse" href="#collapse2">WHAT EFFECT DOES USING MOZILLA FIREFOX INSTEAD OF INTERNET EXPLORER HAVE ON SITE</a>
                 </h6>
-              </div>
-              <div id="collapse2" class="panel-collapse collapse">
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
                 <ul class="list-group">
                   <li class="list-group-item"><p>None. Users going through a proxy server will still have an IP address associated with the institution.</p></li>
                 </ul>
-             </div>
-            </div>
-  
+    </div>
   </div>
 </div>
+
 
 <div class="navbar navbar-sidebar-nav" id="accordion">
   <div class="container">
@@ -66,34 +78,33 @@
                 <h6>
                   <a data-toggle="collapse" href="#collapse3">WHAT ARE CONSOLIDATE COUNTER REPORTS?</a>
                 </h6>
-              <div id="collapse3" class="panel-collapse collapse">
+        <div id="collapse3" class="panel-collapse collapse">
                 <ul class="list-group">
                   <li class="list-group-item"><P>Counter Reports are the consolidated reports provided to the libraries which are downloaded from over 145 publishers' websites we support, which are COUNTER 4 compliant. These are base reports in consolidated form for Books, Journals, and databases usage.</P></li>
                 </ul>
-             </div>
+        </div>
 
              <h6 >
                     <a data-toggle="collapse" href="#collapse4">WHAT ARE CUSTOM REPORTS?</a>
              </h6>
-              <div id="collapse4" class="panel-collapse collapse">
+        <div id="collapse4" class="panel-collapse collapse">
                   <ul class="list-group">
                     <li class="list-group-item"><p>A host of custom COUNTER-compliant reports makes it easier to analyze usage of online resources. These custom reports help libraries to understand and analyze usage trends and effectiveness of subscribed resources. These reports provide an insight into the actual usage of online resources, and helps libraries in making budgeting decision more effectively for optimization of content subscription.</p></li>
                   </ul>
-             </div>
+        </div>
 
                 <h6>
                   <a data-toggle="collapse" href="#collapse5">WHAT ARE SOURCE REPORTS?</a>
                 </h6>
-              <div id="collapse5" class="panel-collapse collapse">
+        <div id="collapse5" class="panel-collapse collapse">
                 <ul class="list-group">
                   <li class="list-group-item"><p>Source Reports are COUNTER reports that are provided by publishers to the subscribed library. These are unprocessed reports containing all the usage data that we collect individually for all libraries either manually or automated through SUSHI, wherever applicable.
                 </p></li>
                 </ul>
-             </div>
+        </div>
      </div>   
   </div>
 </div>
-
 
 
 <div class="navbar navbar-sidebar-nav" id="accordion">
@@ -112,9 +123,9 @@
                   <li class="list-group-item"><p>Username and Password provided by Institution/Library in order to collect the Usage Statistics from the Collection Platforms.
 								</p></li>
                 </ul>
-             </div>
+              </div>
 
-              <h6 >
+                <h6 >
                   <a data-toggle="collapse" href="#collapse8">WHAT ARE 'PADS INCORRECT/FAILED'?</a>
                 </h6>
               <div id="collapse8" class="panel-collapse collapse">
@@ -122,9 +133,9 @@
                   <li class="list-group-item"><p>Username and Password combination is not accepted at the Collection Platform website URL at the time of collection. The access details are invalid and MPS Insight Team will not be able to collect your usage reports. Please contact the Account Manager at the respective Platform to obtain the correct set of access details.
                 </p></li>
                 </ul>
-             </div>
+              </div>
 
-             <h6 >
+                <h6 >
                   <a data-toggle="collapse" href="#collapse9">WHAT IS MEANT BY PADS NOT RECEIVED?</a>
                 </h6>
               <div id="collapse9" class="panel-collapse collapse">
@@ -146,7 +157,10 @@
      </div>
   </div>
 </div>
+</div>
+</div>
 <%= render :partial => '/layouts/footer'%>
 
+</section>
 </body>
 </html>

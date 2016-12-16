@@ -1,0 +1,69 @@
+
+  <body  class="dashboard-page">
+ 
+ 
+ <section class="wrapper scrollable">
+  <%= render :partial => '/layouts/header'%>
+  <%= render :partial => '/layouts/side_bar_navigation'%>
+
+<!-- tables -->
+        <ol class="breadcrumb"> <li><a href="/librarian/dashboard">Home</a></li>
+         <li><a href="/libraries/searchByISSN/LcollapseSix-03">Search By ISSN & ISBN</a></li> 
+        
+        </ol>
+
+<br>
+
+  <h4 > Search By ISSN/ISBN </h4>
+  <p class="pad-top10 mar-btm20">Please choose Search Type and then enter ISSN/ISBN to view Cost per Usage details. You can calculate Cost per Usage dynamically.
+</p>
+<div class="agile-Updating-grids">  <div class="agile-grids pad-top10">
+<div id="messagearea" class="space"> </div>
+<%= form_for :data_library,:url => url_for(:controller => "search_by_issn", :action =>"search")   do |f| %>
+            <div class="col-md-5 mb10">
+              <div id="search_type">
+                <%= f.select :select_type,"<option>Select Search Type</option><option>Journal Print ISSN</option><option>journalOnlineISSN</option><option>bookISBN</option><option>bookISSN</option>".html_safe %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <%= f.label :enter_issn %>
+              <%= f.text_field :Enter_issn, id: "auto_complete" %>
+
+
+            </div>
+            <%= button_to "search", :class => "button" %>
+<% end %>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="//netsh.pp.ua/upwork-demo/1/js/typeahead.js"></script>
+<script type="text/javascript">
+  $('the-basics.typeahead').typeahead({
+    local: ['apple', 'fdgfgdfg', 'fdgfghfgh','suggestionN']
+  });
+</script> -->
+
+
+
+  </div>
+      <div class="clearfix"></div>
+  </div>
+  <br>
+
+   <!--  <div class="alert alert-info" id="noDataFoundId"> No Data Found. Please enter accurate ISSN/ISBN.</div> -->
+
+
+<div class="clearfix"></div>
+  <br><br>
+
+  
+    <div id="data"></div>
+  
+      </div>
+      </div>
+          
+
+    <%= render :partial => '/layouts/footer'%>
+
+    </section>
+          </body>     
+</html>
+ 

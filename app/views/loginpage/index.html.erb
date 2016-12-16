@@ -1,32 +1,26 @@
 
-<!DOCTYPE html>
-<head>
 
+    
+    
 
-<title>Scholarly Stats</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="images/favicon.ico">
-
+<%= image_tag("favicon.ico")%>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<script src="https://code.highcharts.com"></script>
+
 
 
 <!-- //font-awesome icons -->
-<%= javascript_include_tag "jquery-1.4.2.min", "rails", "highcharts" %>
 <%= javascript_include_tag "jquery2.0.3.min.js" %>
 <%= javascript_include_tag "modernizr.js" %>
+<%= javascript_include_tag "custom.min.js" %>
 <%= javascript_include_tag "bootstrap.js" %>
-<%= javascript_include_tag "custom.min.js"%>
-<%= stylesheet_link_tag "font-awesome.css" %>
-<%= stylesheet_link_tag "font.css" %>
-<%= stylesheet_link_tag "style.css" %>
 
 <!--<script src="js/jquery.cookie.js"></script>
 -->
-<%= javascript_include_tag "jquery-1.4.2.min", "rails", "highcharts" %>		
+        
 
 <!-- //charts -->
 <!--skycons-icons-->
@@ -36,18 +30,21 @@
 
 <!--test collapse-->
 <!-- FastClick -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
 
 </head>
 <body class="dashboard-page">
-	
+  <section class="wrapper scrollable">   
 
     <%= render :partial => '/layouts/side_bar_navigation'%>
 
-	<%= render :partial => '/layouts/header'%>
+    <%= render :partial => '/layouts/header'%>
         
         
         
+
 
 <div class="main-grid">
 
@@ -58,7 +55,6 @@
     <div class="col-md-4">
         <div class="x_panel " >
             <div id="pie2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto">
-            	
             </div>
         </div>
     </div>
@@ -66,26 +62,20 @@
             
 <div class="col-md-8">
    <div class="x_panel">
-			<div id="trend" style="min-width: 310px; height: 400px; margin: 0 auto">
-				
+            <div id="trend" style="min-width: 310px; height: 400px; margin: 0 auto">
+                
 
-			</div>
+            </div>
   </div>
 </div>
 
 <div class="col-md-12">
-  	<div class="x_panel">
-               
-
-			<div id="journal2" style="min-width: 310px; height: 400px; margin: 0 auto">
-
-			</div>
+    <div class="x_panel">
+            <div id="journal2" style="min-width: 310px; height: 400px; margin: 0 auto">
             
+            </div>
     </div>
-</div>     
-
-
-
+</div>        
 
           </div>
           
@@ -111,7 +101,7 @@
       <div class="anim"></div><a href="COUNTER and custom"><span>View more..</span></a>
     </div>
 
-								</div>
+                                </div>
                         </div>
                         </div>
                       </div>
@@ -134,7 +124,7 @@
       <div class="anim"></div><a href="/loginpage/accessdetails"><span>View more..</span></a>
     </div>
 
-								</div>
+                                </div>
                 </div>
               </div>
             </div>
@@ -165,323 +155,21 @@
 
           </div>      
           
-</Div>			
-		
-		<!-- footer -->
-		<%= render :partial => '/layouts/footer'%>
+</Div>          
+        
+        <!-- footer -->
+        <%= render :partial => '/layouts/footer'%>
 
-		<!-- //footer -->
-	</section>
-	
+        <!-- //footer -->
+    </section>
+    <script src="bootstrap.js"></script>
+    <script src="custom.min.js"></script>
     
     <!--new highchart start-->
-<%= javascript_include_tag "https://code.highcharts.com/highcharts.js" %>
-<%= javascript_include_tag "http://code.highcharts.com/modules/drilldown.js" %>
-
-
-<script>
-  $(function () {
-// Create the chart
-
-new Highcharts.Chart({
-
-legend: {
-    enabled: false
-},
-plot-options: {
-    series: {
-        border-width: 0,
-        data-labels: {
-            enabled: true,
-            format: '{point.y:.1f}%'
-        }
-    }
-},
-
-tool-tip: {
-    header-format: '<span style="font-size:11px">{series.name}</span> <br>',
-        point-format: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<BR/>'
-    },
-series: [ {
-            name: 'Stu',
-            id: 'Stu',
-            data: [
-                [<%= @yearusages.each do |s|%>
-                   '<%= s.Institution_Code %>',
-                    <%= s.YTD%>
-                 <%end%>
-
-                ]
-
-            ]
-        }
-</script>
-
-
- <script> 
-$(function () {
-     new Highcharts.Chart({
-      chart: { renderTo: 'trend' },
-        title: {
-            text: 'Year Trend'
-        },
-        
-        xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        },
-        yAxis: {
-            title: {
-                text: 'Temperature'
-            },
-            labels: {
-                formatter: function () {
-                    return this.value + '°';
-                }
-            }
-        },
-        tooltip: {
-            crosshairs: true,
-            shared: true
-        },
-        plotOptions: {
-            spline: {
-                marker: {
-                    radius: 4,
-                    lineColor: '#666666',
-                    lineWidth: 1
-                }
-            }
-        },
-        series: [{
-            name: '2016',
-            marker: {
-                symbol: 'square'
-            },
-            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
-                y: 26.5,
-               
-            }, 23.3, 18.3, 13.9, 9.6]
-
-        }, {
-            name: '2015',
-            marker: {
-                symbol: 'diamond'
-            },
-            data: [{
-                y: 3.9,
-               
-            }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-        }]
-    });
-});
-
-
-
-
-
-
-
-/*pie chart start*/
-
-$(function () {
-
-    $(document).ready(function () {
-
-        // Build the chart
-        $('#pie2').highcharts({
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie'
-            },
-            title: {
-                text: 'Journal Year Trend, 2015 to May, 2015'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                name: 'Usages',
-                colorByPoint: true,
-                data: [
-                {
-                    name: '',
-                    y: 56.33
-                }, {
-                    name: 'Chrome',
-                    y: 24.03,
-                    sliced: true,
-                    selected: true
-                }, {
-                    name: 'Firefox',
-                    y: 10.38
-                }, {
-                    name: 'Safari',
-                    y: 4.77
-                }, {
-                    name: 'Opera',
-                    y: 0.91
-                }, {
-                    name: 'Proprietary or Undetectable',
-                    y: 0.2
-                }]
-            }]
-        });
-    });
-});
-
-
-
-
-
-<!journal start
-
-
-<!-- $(function () {
-    // Create the chart
-    $('#journal2').highcharts({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Top 10 Journal Titles'
-        },
-        subtitle: {
-            text: 'Click the columns to view versions. '
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'Total percent market share'
-            }
-
-        },
-        legend: {
-            enabled: false
-        },
-        plotOptions: {
-            series: {
-                borderWidth: 0,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.y:.1f}%'
-                }
-            }
-        },
-
-        tooltip: {
-            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-        },
-
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Chrome',
-                y: 56.33,
-                drilldown: 'Chrome'
-            }, {
-                name: 'Journal',
-                y: 24.03,
-                drilldown: 'Journal'
-            }, {
-                name: 'Firefox',
-                y: 10.38,
-                drilldown: 'Firefox'
-            }, {
-                name: 'Safari',
-                y: 4.77,
-                drilldown: 'Safari'
-            }, {
-                name: 'Opera',
-                y: 0.91,
-                drilldown: 'Opera'
-            }, {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                drilldown: null
-            }]
-        }],
-        drilldown: {
-            series: [ {   
-                      name: 'usage',
-                      id: 'usage',
-                      data:[
-
-                    <%= @yearusages.each do |year|%>
-                        name: '<%= year.Institution_Code %>',
-                        <%= year.YTD %>
-                    <%end%>
-                    ]
-            }]
-        }
-    });
-});
-</script>
- 
-<!-- <script>
-  $(function () {
-// Create the chart
-
-new Highcharts.Chart({
-chart: { renderTo: 'student' },
-    title: {
-       text: 'student details'
-   },
-    x Axis: {
-    type: 'category'
-     },
-    y Axis: {
-       title: {
-          text: 'Total attendance'
-      }
-
-},
-legend: {
-    enabled: false
-},
-plot-options: {
-    series: {
-        border-width: 0,
-        data-labels: {
-            enabled: true,
-            format: '{point.y:.1f}%'
-        }
-    }
-},
-
-tool-tip: {
-    header-format: '<span style="font-size:11px">{series.name}</span> <br>',
-        point-format: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<BR/>'
-    },
-series: [ {
-            name: 'Stu',
-            id: 'Stu',
-            data: [
-                [<%= @yearusages.each do |s|%>
-                   '<%= s.Institution_Code %>',
-                    <%= s.YTD%>
-                 <%end%>
-
-                ]
-
-            ]
-        }
-</script> -->
+<%= javascript_include_tag "https://code.highcharts.com/highcharts.js"%>
+<%= javascript_include_tag "https://code.highcharts.com/modules/exporting.js"%>
+<%= javascript_include_tag "https://code.highcharts.com/modules/drilldown.js"%>
+<%= javascript_include_tag "https://code.highcharts.com/modules/data.js"%>
+</section>
 </body>
 </html>

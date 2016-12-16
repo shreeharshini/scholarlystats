@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>About Us</title>
-	<%= render :partial => '/layouts/side_bar_navigation'%>
 
-    <%= render :partial => '/layouts/header'%>
+	<title>About Us</title>
+	
 </head>
-<body>
+<body class="dashboard-page">
+ <section class="wrapper scrollable">
+  
+  <%= render :partial => '/layouts/side_bar_navigation'%>
+
+  <%= render :partial => '/layouts/header'%>
 
 <br>
 <br>
@@ -15,7 +16,7 @@
 
 
 	<p>
-		
+		<br>
 		<h2>About Insight Library Service</h2><br>
 
 		<b>MPS Scholarlystats for Libraries</b> allows libraries to retrieve all customer-related information and COUNTER usage reports through a single platform. Intuitive user interfaces and customized user access settings allow easy navigation while retrieving consolidated usage reports that help make informed decisions.<br>
@@ -38,5 +39,6 @@
 </div>
 <%= render :partial => '/layouts/footer'%>
 
+</section>
 </body>
 </html>

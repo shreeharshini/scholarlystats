@@ -1,0 +1,26 @@
+<%= simple_form_for(@additional_user) do |f| %>
+  <%= f.error_notification %>
+<p class="spacer_right pull-right s">
+  <small>
+    <i>
+      Fields marked as 
+      <span class="red">*</span>
+       are mandatory
+    </i>
+  </small>
+</p>
+
+  <div class="form-inputs">
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :confirm_password %>
+    <%= f.collection_radio_buttons :role, [[User, 'User Role'] ,[value="Admin", 'Admin']], :first, :last %>
+  	 				
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

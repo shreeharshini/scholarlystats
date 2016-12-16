@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+<title>Scholarly-stats</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+--><!-- bootstrap-css -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font.css" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<script src="js/jquery2.0.3.min.js"></script>
+<script src="js/modernizr.js"></script>
+
+  
+
+
+  
+
+</head>
+<body  class="dashboard-page">
+ 
+ 
+ <section class="wrapper scrollable">
+  <%= render :partial => '/layouts/header'%>
+  <%= render :partial => '/layouts/side_bar_navigation'%>
+ 
+ 
+    <div class="main-grid">
+        
+        
+        <ol class="breadcrumb"> <li><a href="index.html">Home</a></li>
+         <li><a href="#">Source Reports</a></li> 
+        
+        </ol>
+  
+
+<p id="notice"><%= notice %></p>
+
+<h1>Account Information</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User ID</th>
+      <th>Name</th>
+      <th>Email ID</th>
+      <th>Role</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.first_name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.role %></td>
+        <td><%= check_box_tag 'accept' %> </td>
+       
+     
+  <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+
+              <input type="button" onclick="window.location = '/create_additional_users/new'" value="Create New User">
+              <input type="button" onclick="window.location = '/create_additional_users/new'" value="Update">
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <p>© 2016 . All Rights Reserved . Design by <a href="#">MPS</a></p>
+    </div>
+    <!-- //footer -->
+
+  <script src="js/bootstrap.js"></script>
+    
+       
+         <link href='css/date.css' rel='stylesheet prefetch' type="text/css">
+
+     
+<script src="js/date-jquery-ui.min.js"></script>
+
+  <script src="js/date-angular.min.js"></script>
+<script src="js/date.js"></script>
+</section>
+  
+</body>
+</html>

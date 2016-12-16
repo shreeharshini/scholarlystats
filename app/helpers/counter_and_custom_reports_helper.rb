@@ -1,0 +1,2 @@
+module CounterAndCustomReportsHelper
+end

@@ -10,6 +10,7 @@ class LoginpageController < ApplicationController
   end
 
   def dynamicreports
+    
   end
 
   def sourcereports 	

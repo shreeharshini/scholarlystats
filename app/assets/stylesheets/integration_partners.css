@@ -1,0 +1,129 @@
+	    .login-logo img {
+		 width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+		}
+    
+	.login-head {
+	background-color: #fff;
+	
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+	
+	.login-bg{
+	/*background-attachment: fixed;
+	background: url(/images/libraries/home/login/login-bg.jpg);
+	background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #fff;*/
+	
+
+    padding-top: 44px;
+    padding-bottom: 100px;
+}
+
+
+	.login-bg2{
+	background-attachment: fixed;
+	background: url(/images/libraries/home/login/login-bg.jpg);
+	background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+	
+	
+}
+
+.login-heading-about {
+    font-size: 22px;
+    font-weight: 600;
+    color: #666666;
+	    margin-top: 58px;
+}
+.login-p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.login-box{
+	margin: 0 3px;
+    background: rgba(255, 255, 255, 0.77);
+    text-align: center;
+    border: solid 1px #ccc;
+	padding:40px;
+ 
+	}
+
+.login-box-text {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-footer-bg {
+	background-color: #fff;
+	 position: fixed;
+    bottom: 0px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	    z-index: 5;
+	
+	}
+	.padding-top-20{
+		padding-top:20px;
+		}
+		
+		
+		@media (max-width:780px) { 
+		
+			.login-bg{
+	
+	
+
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+		
+		}
+.fancybox-inner{height:300px !important}
+   
+body{
+padding-top:70px\0;	
+padding-bottom:70px\0;	
+}
+
+.pageLoadContainer{margin:0 auto;position:absolute;top:0;background:#000; opacity:0.5;width:99%; height:100%;z-index:2;}
+
+.icon_sprite, .Dealer, .greenflag, .redflags, .Institution, .Consortia, .syndicate, .region, .country, .si, .xml, .excel, .csv {
+    background: url(/images/demo/images/icon-sprite.png);
+        background-color: transparent;
+        background-image: url("/images/demo/images/icon-sprite.png");
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto auto;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+ .greenflag {
+    width: 20px;
+    background-position: -117px 0 !important;
+        background-position-x: -117px;
+        background-position-y: 0px;
+	}
