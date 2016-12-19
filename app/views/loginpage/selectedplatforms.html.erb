@@ -192,11 +192,12 @@
 											        <td><%= plat.platform.created_at.strftime("%d-%m-%y") %></td>
 											       <% @repo.each do |asd| %>
 															<td width="50">
- 																<% if  plat.report.name == asd %>
+ 														<!--		<% if  plat.reports == asd %>
 														         <div class="square-block-selected"><br><br></div>
 														         <% else%>
 														         <div class="square-block-not-available"><br><br></div>
-												        <%end%>
+												        <%end%> -->
+												        <%= plat.reports %>
 												      </td>
 												     <%  end %>
 											      </tr>

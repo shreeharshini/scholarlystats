@@ -31,10 +31,10 @@ class LoginpageController < ApplicationController
     user_id = current_user.id
     @accounts = Account.where(:id => user_id ).first
     
-    @platid = PlatformReport.select("MIN(id) as id").group(:platform_id).collect(&:id)
-    @platforms = PlatformReport.where("id  IN (?)",@platid)
+    # @platid = PlatformReport.select("MIN(id) as id").group(:platform_id).collect(&:id)
+    @platforms = PlatformReport.find_by_sql("SELECT platform_id,GROUP_CONCAT(report_id) AS reports FROM platform_reports GROUP BY platform_id")
    
-    @repo = ["jr1","jr1a","jr2","jr3","jr5", "db1","db2","pr1","br1","br2"   
+    @repo = [ 1,3,4,5,6,2,7,8,9,10  
     ]
 
     # @previous = PlatformReport.all

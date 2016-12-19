@@ -1,6 +1,139 @@
-<%= line_chart YearTrend.all.collect { |goal| 
-  {
-    
-    :data => goal.YearTopJournal.group(:journal_title).count 
-  } 
-} %>
+
+
+<html>
+<head>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src= "https://code.highcharts.com/modules/drilldown.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com"></script>
+
+</head>
+<body>
+
+
+<br>
+
+<%= content_tag :div, "", id: "journal2", data: { yeartrends: @yeartrends }%>
+
+<%= content_tag :div, "", id: "pie2", data: { yearusages: @yearusages }%>
+
+        
+</body>
+</html>
+
+<script>
+
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        $('#pie2').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Journal Year Trend, 2015 to May, 2015'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Usages',
+                colorByPoint: true,
+                data: [{
+                    name: '<%= %>',
+                    y: 96.5
+                }, {
+                    name: 'Journals',
+                    y: 2.4,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Books',
+                    y: 1.1
+                }]
+            }]
+        });
+    });
+});
+
+   $(function () {
+            var chart;
+            $(document).ready(function () {
+                chart = new Highcharts.Chart({
+                    chart:{
+                        renderTo:'journal2',
+                        type:'column'
+                    },
+                    title:{
+                        text:'testing'
+                    },
+                    xAxis:{
+                        categories:[
+
+                            '<%= @yeartrends.name  %>'
+
+                        ]
+                    }, 
+                    yAxis:{
+                        min:0,
+                        title:{
+                            text:'Ages'
+                        },
+
+                    },
+                    legend:{
+                        layout:'vertical',
+                        backgroundColor:'#FFFFFF',
+                        align:'left',
+                        verticalAlign:'top',
+                        x:100,
+                        y:70,
+                        floating:true,
+                        shadow:true
+                    },
+                    tooltip:{
+                        
+
+                        credits:{
+                            text:'SomeText.co.uk',
+                            hreft:'http://wwww.putyourlinkhere.co.uk'
+                        }
+                    },
+                    plotOptions:{
+                        column:{
+                            pointPadding:0.4,
+                            borderWidth:0
+                        }
+                    },
+
+
+                    series:[
+                        <% @yeartrends.each do |examp| %>
+                        {
+                            name:'<%= examp.institution_code %>',
+                            data:[<%= examp.Jan_Stats %>]
+                        },
+                        <% end %>
+                                        ]
+                });
+            });
+
+        });
+</script>
