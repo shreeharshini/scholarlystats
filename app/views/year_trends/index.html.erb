@@ -19,6 +19,11 @@
 
 <%= content_tag :div, "", id: "pie2", data: { yearusages: @yearusages }%>
 
+
+<%= @yearusages.each do |yearusages|%>
+  <%= yearusages.Report_Type %>
+  <%= yearusages.abc %>
+<%end%>
         
 </body>
 </html>
@@ -30,7 +35,7 @@ $(function () {
     $(document).ready(function () {
 
         // Build the chart
-        $('#pie2').highcharts({
+        Highcharts.chart('pie2', {
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -38,7 +43,7 @@ $(function () {
                 type: 'pie'
             },
             title: {
-                text: 'Journal Year Trend, 2015 to May, 2015'
+                text: 'Browser market shares January, 2015 to May, 2015'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -54,19 +59,28 @@ $(function () {
                 }
             },
             series: [{
-                name: 'Usages',
+                name: 'Brands',
                 colorByPoint: true,
                 data: [{
-                    name: '<%= %>',
-                    y: 96.5
+                    name: 'Microsoft Internet Explorer',
+                    y: 56.33
                 }, {
-                    name: 'Journals',
-                    y: 2.4,
+                    name: 'Chrome',
+                    y: 24.03,
                     sliced: true,
                     selected: true
                 }, {
-                    name: 'Books',
-                    y: 1.1
+                    name: 'Firefox',
+                    y: 10.38
+                }, {
+                    name: 'Safari',
+                    y: 4.77
+                }, {
+                    name: 'Opera',
+                    y: 0.91
+                }, {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2
                 }]
             }]
         });

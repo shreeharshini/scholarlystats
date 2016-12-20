@@ -34,7 +34,7 @@ class LoginpageController < ApplicationController
     # @platid = PlatformReport.select("MIN(id) as id").group(:platform_id).collect(&:id)
     @platforms = PlatformReport.find_by_sql("SELECT platform_id,GROUP_CONCAT(report_id) AS reports FROM platform_reports GROUP BY platform_id")
    
-    @repo = [ 1,3,4,5,6,2,7,8,9,10  
+    @repo = [ 1,2,3,4,5,6,7,8,9,10  
     ]
 
     # @previous = PlatformReport.all
