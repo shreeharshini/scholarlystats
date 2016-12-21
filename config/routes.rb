@@ -32,7 +32,13 @@ Rails.application.routes.draw do
   get "import_data/xlsx"
   post "search_by_issn/search"
   
-  resources :loginpage, :accounts, :reports, :platforms, 
+resources :loginpage do
+  collection do
+    get 'test1'
+  end
+end
+
+  resources :accounts, :reports, :platforms, 
             :source_reports_mappings, :year_trends, :year_usages,
             :year_top_journals, :account_infos, :export_files, 
             :platform_reports, :requestfordemos, :contact_us, 

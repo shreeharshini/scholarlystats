@@ -18,6 +18,15 @@
 integration_partners_manage_sushi_account GET    /integration_partners/manage_sushi_account(.:format) integration_partners#manage_sushi_account
                          import_data_xlsx GET    /import_data/xlsx(.:format)                          import_data#xlsx
                     search_by_issn_search POST   /search_by_issn/search(.:format)                     search_by_issn#search
+                        test1_experiments GET    /experiments/test1(.:format)                         experiments#test1
+                              experiments GET    /experiments(.:format)                               experiments#index
+                                          POST   /experiments(.:format)                               experiments#create
+                           new_experiment GET    /experiments/new(.:format)                           experiments#new
+                          edit_experiment GET    /experiments/:id/edit(.:format)                      experiments#edit
+                               experiment GET    /experiments/:id(.:format)                           experiments#show
+                                          PATCH  /experiments/:id(.:format)                           experiments#update
+                                          PUT    /experiments/:id(.:format)                           experiments#update
+                                          DELETE /experiments/:id(.:format)                           experiments#destroy
                           loginpage_index GET    /loginpage(.:format)                                 loginpage#index
                                           POST   /loginpage(.:format)                                 loginpage#create
                             new_loginpage GET    /loginpage/new(.:format)                             loginpage#new
