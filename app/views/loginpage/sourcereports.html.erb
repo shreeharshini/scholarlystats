@@ -80,9 +80,7 @@
             <label >Reporting period:</label>
                 <select class="form-control" id="selectpid2">
                               <option>--Select Year--</option>
-                      <%= @source_reports.each do |f|%>
-                            <option><%= f.year %></option>
-                      <% end %>  
+                      
                 </select>
           </div>
 			</div>
@@ -103,7 +101,7 @@
    				</div>
 			</div>  
 		
-    <%= collection_select :platform, :id, Platform.all, :id, :name, {}, {:onchange => '$.get("/sample")'} %>
+    
 			    
     <br>
   </div>  	
@@ -118,8 +116,7 @@
   <script>
   	 $("#selectpid1").change(function(){
 
-      alert("platform selected");
-      var value1 = $('select#selectpid1 option:selected').val();
+     var value1 = $('select#selectpid1 option:selected').val();
       console.log("Gotcha");
         $.ajax({
             type:"GET",
@@ -127,18 +124,17 @@
             dataType:"json",
             data: {some_parameter: value1 },
             success:function(result){
-              alert(result);
+              var $secondChoice = $("#selectpid2");
+                $secondChoice.empty();
+                $.each(result, function(index, value) {
+                  $secondChoice.append("<option>" + value + "</option>");
+                });
             }
         })
-});
-    $("#selectpid2").change(function(){
-
-      alert("year changed");
-      var value2 = $('select#selectpid2 option:selected').val();
-
-    });
-
+      });
   </script>
   
 </body>
 </html>
+
+ 

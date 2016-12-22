@@ -14,13 +14,10 @@ class LoginpageController < ApplicationController
   end
 
   def test1
-      binding.pry
-       some_parameter = SourceReportsMapping.find(params[:some_parameter])
-        @test=SourceReportsMapping.last
-        binding.pry
+       some_parameter = SourceReportsMapping.find_by_platform_id(params[:some_parameter])
         respond_to do |format|
           format.html
-          format.json {render json: @test}
+          format.json {render json: some_parameter.to_json}
         end
     end
 
