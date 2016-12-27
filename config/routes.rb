@@ -34,8 +34,9 @@ Rails.application.routes.draw do
   
 resources :loginpage do
   collection do
-    get 'test1'
-  end
+    get 'getyear'
+    get 'getreports'
+   end
 end
 
   resources :accounts, :reports, :platforms, 

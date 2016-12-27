@@ -60,12 +60,12 @@
 </p>
 
 
-
 <div class="agile-Updating-grids"> 
 	<div class="agile-grids pad-top10">
-      <div class="col-md-5 mb10">
+      <div class="col-md-3 mb10">
 				<div class="form-group">
-    						<select class="form-control" id="selectpid1" >
+        <label>Platform</label>
+    						<select class="form-control" id="dropdown1" >
 
                           <option>--Select Platform--</option>
                        <%= @source_reports.each do |f|%>
@@ -73,18 +73,19 @@
                             <option><%= f.platform_id %></option>
                       <% end %>  
             </select>
+
         </div>
       </div>
       <div class="col-md-3">
           <div class="form-group">
             <label >Reporting period:</label>
-                <select class="form-control" id="selectpid2">
+                <select class="form-control" id="dropdown2">
                               <option>--Select Year--</option>
-                      
                 </select>
           </div>
 			</div>
-           
+     
+
                    
       <div class="col-sm-12 pad-top20">
                 
@@ -97,15 +98,19 @@
 	  						 	
 	  						 </div>
 	  						 <span>Get Reports</span>
-  						 </a>
+                 <button>ikojm</button>
+ 						 </a>
    				</div>
 			</div>  
 		
-    
 			    
     <br>
   </div>  	
 </div>
+<br>
+
+    <div id = "div1"></div>
+
 		<!-- footer -->
 
 		<!-- //footer -->
@@ -114,27 +119,48 @@
 
     
   <script>
-  	 $("#selectpid1").change(function(){
-
-     var value1 = $('select#selectpid1 option:selected').val();
-      console.log("Gotcha");
+  	$("#dropdown1").change(function(){
+       var value1 = $('select#dropdown1 option:selected').val();
         $.ajax({
             type:"GET",
-            url:"/loginpage/test1",
+            url:"/loginpage/getyear",
             dataType:"json",
-            data: {some_parameter: value1 },
+            data: {sourcereportsyear: value1 },
             success:function(result){
-              var $secondChoice = $("#selectpid2");
+               $secondChoice = $("#dropdown2");
                 $secondChoice.empty();
                 $.each(result, function(index, value) {
-                  $secondChoice.append("<option>" + value + "</option>");
+                      $secondChoice.append("<option>" + value + "</option>");
+                    alert(value);
                 });
+                        $.ajax({
+                          type: "GET", 
+                          dataType: "json",
+                          url:"/loginpage/getreports",
+                          data: {sourcereports1: result }, 
+                            success:function(result1){
+                              alert(result1);
+                            }
+                        })
             }
         })
-      });
+    });
   </script>
-  
+
+
+
+ <script>
+ $(function () {
+  $("button").click(function(){
+    $.ajax({url:"getreports.html",
+      success:function(result){
+      $("#div1").html(result);
+    }});
+  });
+});
+</script>
+
+
+
 </body>
 </html>
-
- 

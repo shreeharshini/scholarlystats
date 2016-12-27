@@ -1,0 +1,6 @@
+wb = xlsx_package.workbook 
+wb.add_worksheet(name: "Reports") do |sheet|
+	@reports.each do |report|
+		sheet.add_row [ report.name, report.description, report.format]
+	end
+end
