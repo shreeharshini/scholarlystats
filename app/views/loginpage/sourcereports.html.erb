@@ -65,6 +65,9 @@
       <div class="col-md-3 mb10">
 				<div class="form-group">
         <label>Platform</label>
+
+        
+<br>
     						<select class="form-control" id="dropdown1" >
 
                           <option>--Select Platform--</option>
@@ -102,7 +105,7 @@
  						 </a>
    				</div>
 			</div>  
-		
+		<div id="test1"></div>
 			    
     <br>
   </div>  	
@@ -133,15 +136,7 @@
                       $secondChoice.append("<option>" + value + "</option>");
                     alert(value);
                 });
-                        $.ajax({
-                          type: "GET", 
-                          dataType: "json",
-                          url:"/loginpage/getreports",
-                          data: {sourcereports1: result }, 
-                            success:function(result1){
-                              alert(result1);
-                            }
-                        })
+                      
             }
         })
     });
@@ -152,10 +147,25 @@
  <script>
  $(function () {
   $("button").click(function(){
-    $.ajax({url:"getreports.html",
-      success:function(result){
-      $("#div1").html(result);
-    }});
+           var value2 = $('select#dropdown2 option:selected').val();
+
+                    $.ajax({
+                          type: "GET", 
+                          dataType: "json",
+                          url:"/loginpage/getreports",
+                          data: {sourcereports1: value2 }, 
+                            success:function(result1){
+                              console.log(result1);
+                              result1.forEach(function(){
+                                $sourcerepo_html = $("<div class= 'result1'>" + result1 + "</div>");
+                               $('#test1').append($sourcerepo_html);
+                                alert(result1);
+                              // alert(abc);
+
+                              })
+                             
+                            }
+                    })
   });
 });
 </script>
@@ -164,3 +174,4 @@
 
 </body>
 </html>
+

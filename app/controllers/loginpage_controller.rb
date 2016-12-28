@@ -7,7 +7,6 @@ class LoginpageController < ApplicationController
 
   def getreports
     sourcereports1 = SourceReportsMapping.where(:year => params[:sourcereports1]).pluck(:report_id)
-      binding.pry
       respond_to do |format|
           format.html
           format.json {render json: sourcereports1.to_json}
