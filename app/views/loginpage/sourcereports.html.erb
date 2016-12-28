@@ -30,10 +30,10 @@
 <%= javascript_include_tag "application.js" %>
 
 
-	
+  
 
 
-	
+  
 
 </head>
 <body  class="dashboard-page">
@@ -44,8 +44,8 @@
   <%= render :partial => '/layouts/side_bar_navigation'%>
 
         <%= render :partial => '/layouts/header'%>
-	
-		<div class="main-grid">
+  
+    <div class="main-grid">
         
         
         <ol class="breadcrumb"> <li><a href="/loginpage">Home</a></li>
@@ -54,21 +54,21 @@
         </ol>
 
 <br>
-				  <h4>Source Reports
+          <h4>Source Reports
 </h4>
 <p class="pad-top10 mar-btm20">You need to choose the platform and reporting period to see source reports.
 </p>
 
 
 <div class="agile-Updating-grids"> 
-	<div class="agile-grids pad-top10">
+  <div class="agile-grids pad-top10">
       <div class="col-md-3 mb10">
-				<div class="form-group">
+        <div class="form-group">
         <label>Platform</label>
 
         
 <br>
-    						<select class="form-control" id="dropdown1" >
+                <select class="form-control" id="dropdown1" >
 
                           <option>--Select Platform--</option>
                        <%= @source_reports.each do |f|%>
@@ -86,43 +86,43 @@
                               <option>--Select Year--</option>
                 </select>
           </div>
-			</div>
+      </div>
      
 
                    
       <div class="col-sm-12 pad-top20">
                 
-               		 Please click on Get Reports to find the desired platform reports.
+                   Please click on Get Reports to find the desired platform reports.
       </div>
       <div class=" col-sm-2 mt-10">
- 					<div class="button raised">
-  						 <a href="#" class="hoverable"> 
-	  						 <div class="anim">
-	  						 	
-	  						 </div>
-	  						 <span>Get Reports</span>
+          <div class="button raised">
+               <a href="#" class="hoverable"> 
+                 <div class="anim">
+                  
+                 </div>
+                 <span>Get Reports</span>
                  <button>ikojm</button>
- 						 </a>
-   				</div>
-			</div>  
-		<div id="test1"></div>
-			    
+             </a>
+          </div>
+      </div>  
+    <div id="test1"></div>
+          
     <br>
-  </div>  	
+  </div>    
 </div>
 <br>
 
     <div id = "div1"></div>
 
-		<!-- footer -->
+    <!-- footer -->
 
-		<!-- //footer -->
-	</section>
-	<%= javascript_include_tag "bootstrap.js" %>
+    <!-- //footer -->
+  </section>
+  <%= javascript_include_tag "bootstrap.js" %>
 
     
   <script>
-  	$("#dropdown1").change(function(){
+    $("#dropdown1").change(function(){
        var value1 = $('select#dropdown1 option:selected').val();
         $.ajax({
             type:"GET",
@@ -134,7 +134,7 @@
                 $secondChoice.empty();
                 $.each(result, function(index, value) {
                       $secondChoice.append("<option>" + value + "</option>");
-                    alert(value);
+                    // alert(value);
                 });
                       
             }
@@ -149,23 +149,22 @@
   $("button").click(function(){
            var value2 = $('select#dropdown2 option:selected').val();
 
-                    $.ajax({
-                          type: "GET", 
-                          dataType: "json",
-                          url:"/loginpage/getreports",
-                          data: {sourcereports1: value2 }, 
-                            success:function(result1){
-                              console.log(result1);
-                              result1.forEach(function(){
-                                $sourcerepo_html = $("<div class= 'result1'>" + result1 + "</div>");
-                               $('#test1').append($sourcerepo_html);
-                                alert(result1);
-                              // alert(abc);
-
-                              })
-                             
-                            }
-                    })
+           $.ajax({
+               type: "GET", 
+               dataType: "json",
+               url:"/loginpage/getreports",
+               data: {sourcereports1: value2 }, 
+               success:function(result1){
+                     console.log(result1);
+                     result1.forEach(function(){
+                     $sourcerepo_html = $("<div class= 'result1'>" + result1 + "</div>");
+                     $('#test1').append($sourcerepo_html);
+                       alert(result1);
+                       // alert(abc);
+                                 $("div1").text(result1);
+                      })
+                }
+          })
   });
 });
 </script>
