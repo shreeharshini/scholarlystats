@@ -10,7 +10,7 @@ class LoginpageController < ApplicationController
       respond_to do |format|
           format.html
           format.json {render json: sourcereports1.to_json}
-      end
+        end
   end
 
   def test2
@@ -21,19 +21,14 @@ class LoginpageController < ApplicationController
     end
   end
   
-
-
-
   def show
   end
 
- 
-
   def getyear
-       sourcereportsyear = SourceReportsMapping.where(:platform_id => params[:sourcereportsyear]).pluck(:year)
+       @sourcereportsyear = SourceReportsMapping.where(:platform_id => params[:sourcereportsyear]).pluck(:year)
         respond_to do |format|
           format.html
-          format.json {render json: sourcereportsyear.to_json}
+          format.json {render json: @sourcereportsyear.to_json}
         end
     end
 

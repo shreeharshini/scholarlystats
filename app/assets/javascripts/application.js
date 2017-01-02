@@ -11,6 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+
+//= require highcharts
+//= require highcharts/highcharts-more
+
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-datepicker

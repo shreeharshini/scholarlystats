@@ -10,12 +10,12 @@ class YearTrendsController < ApplicationController
   end
 
 def pie_charts_for_yearusages
-   @this_usage = YearUsage.find(1)
-   @abc = YearUsage.last
+   @this_usage = YearUsage.find_by_sql("SELECT Report_Type, SUM(YTD) as abcd FROM year_usages GROUP BY Report_Type")
+   
+   # @abc = YearUsage.find_by_sql("SELECT Report_Type, SUM(YTD) as qwer FROM year_usages GROUP BY Report_Type").last
   end
 
   def show
-  	     # @this_usage = YearUsage.find(1)
 
   	render 'pie_charts_for_yearusages'
   end

@@ -2,12 +2,16 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src= "https://code.highcharts.com/modules/drilldown.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
-<script src="https://code.highcharts.com"></script>
-
-<%= javascript_include_tag "jquery-1.4.2.min", "highcharts" %> 
 
 
-<%= content_tag :div, "", id: "container", data: { this_usage: @this_usage, abc: @abc }%>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> 
+<script src="/javascripts/js/highcharts.js" type="text/javascript"></script> <!--where you put the high charts library -->
+<script src="/highcharts.js" type="text/javascript"></script> <!-- your script -->
+
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+<%= content_tag :div, "", id: "container", data: { this_usage: @this_usage}%>
 
 
 <script>
@@ -17,7 +21,7 @@
 
 
 $(function () {
-    Highcharts.chart('container', {
+   new  Highcharts.chart('container', {
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,
@@ -48,13 +52,12 @@ $(function () {
             colorByPoint: true,
             data: [
               {
-                name: '<%= @this_usage.Report_Type%>',
-                y: <%= @this_usage.YTD %>
+                <% @this_usage.each do |f| %>
+                name: '<%= f.Report_Type %>',
+                y: <%= f.abcd %>
+                <%end%>
               },
-              {
-                name: '<%= @abc.Report_Type %>',
-                y: <%= @abc.YTD %>
-              }
+             
 
             ]
         }]
