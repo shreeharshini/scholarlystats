@@ -40,6 +40,7 @@ resources :loginpage do
   collection do
     get 'getyear'
     get 'getreports'
+    get 'testing'
    end
 end
 

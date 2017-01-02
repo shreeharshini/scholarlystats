@@ -5,6 +5,10 @@ class LoginpageController < ApplicationController
    @yearusages = YearUsage.all
   end
 
+  def testing
+    binding.pry    
+  end
+
   def getreports
     sourcereports1 = SourceReportsMapping.where(:year => params[:sourcereports1]).pluck(:report_id)
       respond_to do |format|

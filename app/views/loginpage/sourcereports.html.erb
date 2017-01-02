@@ -158,10 +158,10 @@
                data: {sourcereports1: value2 }, 
                success:function(result1){
                      console.log(result1);
-                     var sourcerepo_html = "";
+                     // var sourcerepo_html = "";
                      result1.forEach(function(){
                      sourcerepo_html = $("<div class= 'result1'>" + result1 + "</div>");
-                     // $('#test1').append($sourcerepo_html);
+                     $('#test1').append($sourcerepo_html);
                        // alert(result1);
                        // alert(abc);
                                  $("#test1").html(result1);
@@ -176,3 +176,4 @@
 
 </body>
 </html>
+ 
