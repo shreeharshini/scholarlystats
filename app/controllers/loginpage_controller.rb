@@ -10,7 +10,7 @@ class LoginpageController < ApplicationController
       respond_to do |format|
           format.html
           format.json {render json: sourcereports1.to_json}
-        end
+      end
   end
 
   def test2

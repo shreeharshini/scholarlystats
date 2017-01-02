@@ -104,6 +104,8 @@
                  <button>ikojm</button>
              </a>
           </div>
+<div id="testId">Dummay data</div>
+
       </div>  
     <div id="test1"></div>
           
@@ -156,13 +158,14 @@
                data: {sourcereports1: value2 }, 
                success:function(result1){
                      console.log(result1);
+                     var sourcerepo_html = "";
                      result1.forEach(function(){
-                     $sourcerepo_html = $("<div class= 'result1'>" + result1 + "</div>");
-                     $('#test1').append($sourcerepo_html);
+                     sourcerepo_html = $("<div class= 'result1'>" + result1 + "</div>");
+                     // $('#test1').append($sourcerepo_html);
                        alert(result1);
                        // alert(abc);
-                                 $("div1").text(result1);
-                      })
+                                 $("#test1").html(result1);
+                      });
                 }
           })
   });
@@ -173,4 +176,3 @@
 
 </body>
 </html>
-

@@ -1,9 +1,8 @@
 	<nav class="main-menu">
 		<ul>
 			<li>
-			
 					<i class="fa fa-home nav_icon"></i>
-					<span class="nav-text"><a href="/loginpage">Home</a>
+					<span class="nav-text"><a href="" onclick="window.location = '/loginpage'">Home</a>
 					
 					</span>
 				</a>
@@ -19,16 +18,16 @@
 				</a>
 				<ul>
 					<li>
-						<a class="subnav-text" href="/counter_and_custom_reports/index">COUNTER and Custom Reports</a>
+						<a class="subnav-text" href="" onclick="window.location = '/counter_and_custom_reports/index'">COUNTER and Custom Reports</a>
 					</li>
 					<li>
-						<a class="subnav-text" href="/loginpage/sourcereports">Source Reports</a>
+						<a class="subnav-text" href=""  onclick="window.location = '/loginpage/sourcereports'">Source Reports</a>
 					</li>
                     <li>
-					  <a class="subnav-text" href="/loginpage/dynamicreports">Dynamic Reports</a>
+					  <a class="subnav-text" href="" onclick="window.location = '/loginpage/dynamicreports'">Dynamic Reports</a>
 					</li>
 					<li>
-					  <a class="subnav-text" href="/search_by_issn/search">Search By ISSN/ISBN</a>
+					  <a class="subnav-text" href="" onclick="window.location = '/search_by_issn/search'">Search By ISSN/ISBN</a>
 					</li>
 				</ul>
 			</li>
@@ -40,31 +39,31 @@
 				</a>
 				<ul>
 					<li>
-						<a class="subnav-text" href="/loginpage/selectedplatforms">
+						<a class="subnav-text" href="" onclick="window.location = '/loginpage/selectedplatforms'">
 							Selected Platforms
 						</a>
 					</li>
 					<li>
-						<a class="subnav-text" href="/loginpage/accessdetails">
+						<a class="subnav-text" href="" onclick="window.location = '/loginpage/accessdetails'">
 							Access Details
 					  </a>
 					</li>
 					<li>
-						<a class="subnav-text" href="/library_account_details">
+						<a class="subnav-text" href="" onclick="window.location = '/library_account_details'">
 								Library Account Details						</a>
 					</li>
 					<li>
-						<a class="subnav-text" href="/integration_partners/manage_sushi_account">
+						<a class="subnav-text" href="" onclick="window.location = '/integration_partners/manage_sushi_account'">
 								Integration Partners						</a>
 					</li>
                     	<li>
-						<a class="subnav-text" href="/additional_users">
+						<a class="subnav-text" href="" onclick="window.location = '/additional_users'">
 								Create Additional User Accounts						</a>
 					</li>	<li>
-						<a class="subnav-text" href="/import_data">
+						<a class="subnav-text" href="" onclick="window.location = '/import_data'">
 								Upload Data						</a>
 					</li>	<li>
-						<a class="subnav-text" href="/export_files">
+						<a class="subnav-text" href="" onclick="window.location = '/export_files'">
 								Export Data						</a>
 					</li>
 				</ul>
@@ -81,13 +80,13 @@
 				</a>
 				<ul>
 					<li>
-						<a class="subnav-text" href="/support/contactus">Contact Us</a>
+						<a class="subnav-text" href="" onclick="window.location = '/support/contactus'">Contact Us</a>
 					</li>
 					<li>
-						<a class="subnav-text" href="/support/faq">FAQs</a>
+						<a class="subnav-text" href="" onclick="window.location = '/support/faq'">FAQs</a>
 					</li>
           <li>
-						<a class="subnav-text" href="/support/aboutus">About Us</a>
+						<a class="subnav-text" href="" onclick="window.location = '/support/aboutus'">About Us</a>
 					</li>
 					
 				</ul>
@@ -108,3 +107,11 @@
 			</li>
 		</ul>
 	</nav>
+
+<%= javascript_include_tag "custom.min.js" %>
+
+
+<%= javascript_include_tag "https://code.highcharts.com/highcharts.js"%>
+<%= javascript_include_tag "https://code.highcharts.com/modules/exporting.js"%>
+<%= javascript_include_tag "https://code.highcharts.com/modules/drilldown.js"%>
+<%= javascript_include_tag "https://code.highcharts.com/modules/data.js"%>

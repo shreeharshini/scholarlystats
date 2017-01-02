@@ -18,6 +18,7 @@
 integration_partners_manage_sushi_account GET    /integration_partners/manage_sushi_account(.:format) integration_partners#manage_sushi_account
                          import_data_xlsx GET    /import_data/xlsx(.:format)                          import_data#xlsx
                     search_by_issn_search POST   /search_by_issn/search(.:format)                     search_by_issn#search
+     year_trends_pie_chart_for_yearusages GET    /year_trends/pie_chart_for_yearusages(.:format)      year_trends#pie_chart_for_yearusages
                   getyear_loginpage_index GET    /loginpage/getyear(.:format)                         loginpage#getyear
                getreports_loginpage_index GET    /loginpage/getreports(.:format)                      loginpage#getreports
                           loginpage_index GET    /loginpage(.:format)                                 loginpage#index

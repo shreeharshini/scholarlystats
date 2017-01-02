@@ -31,6 +31,10 @@ Rails.application.routes.draw do
   get "integration_partners/manage_sushi_account"
   get "import_data/xlsx"
   post "search_by_issn/search"
+
+  get 'year_trends/pie_charts_for_yearusages'
+
+# map.pie_chart_for_yearusages 'year_trends/pie_chart_for_yearusages', :controller => 'year_trends', :action => 'pie_chart_for_yearusages'
   
 resources :loginpage do
   collection do

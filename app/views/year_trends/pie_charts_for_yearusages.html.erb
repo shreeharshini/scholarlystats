@@ -1,0 +1,65 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src= "https://code.highcharts.com/modules/drilldown.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com"></script>
+
+<%= javascript_include_tag "jquery-1.4.2.min", "highcharts" %> 
+
+
+<%= content_tag :div, "", id: "container", data: { this_usage: @this_usage, abc: @abc }%>
+
+
+<script>
+
+
+
+
+
+$(function () {
+    Highcharts.chart('container', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Browser market shares January, 2015 to May, 2015'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [
+              {
+                name: '<%= @this_usage.Report_Type%>',
+                y: <%= @this_usage.YTD %>
+              },
+              {
+                name: '<%= @abc.Report_Type %>',
+                y: <%= @abc.YTD %>
+              }
+
+            ]
+        }]
+    });
+});
+
+</script>
+

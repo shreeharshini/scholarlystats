@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  New_Code: 1
+  Library_Name: MyString
+  Old_Code: MyString
+
+two:
+  New_Code: 1
+  Library_Name: MyString
+  Old_Code: MyString
